@@ -1,0 +1,2523 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Growfy</title>
+        <link rel="stylesheet" href="css/output/main.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body
+        class="bg-[#0D0D11] text-white font-poppins min-w-[280px] px-7 sm:px-2"
+    >
+        <header>
+            <div
+                class="mx-auto flex justify-between items-center py-8 px-3 max-w-[1280px]"
+            >
+                <a href="#">
+                    <svg
+                        width="148"
+                        height="40"
+                        viewBox="0 0 148 40"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M57.6049 17.3896C57.2583 16.751 56.7565 16.2676 56.0997 15.9392C55.4611 15.5926 54.704 15.4192 53.8283 15.4192C52.3139 15.4192 51.1008 15.921 50.1885 16.9244C49.2762 17.9096 48.8202 19.2324 48.8202 20.8926C48.8202 22.6623 49.2946 24.0489 50.2432 25.0523C51.2102 26.0375 52.5329 26.5301 54.2114 26.5301C55.3608 26.5301 56.3278 26.2382 57.1123 25.6544C57.9151 25.0705 58.4988 24.2313 58.8638 23.1366H52.9252V19.6884H63.1056V24.0398C62.759 25.2074 62.166 26.293 61.3268 27.2964C60.5058 28.2998 59.4567 29.1118 58.1796 29.732C56.9025 30.3523 55.4611 30.6625 53.8556 30.6625C51.9582 30.6625 50.2614 30.252 48.7654 29.431C47.2876 28.5918 46.1291 27.4332 45.2899 25.9554C44.4688 24.4776 44.0583 22.79 44.0583 20.8926C44.0583 18.9951 44.4688 17.3075 45.2899 15.8297C46.1291 14.3337 47.2876 13.1752 48.7654 12.3542C50.2432 11.5149 51.9308 11.0953 53.8283 11.0953C56.1271 11.0953 58.061 11.6518 59.63 12.7647C61.2173 13.8775 62.2664 15.4192 62.7772 17.3896H57.6049ZM70.3775 17.8001C70.9248 16.9609 71.609 16.3041 72.43 15.8297C73.251 15.3371 74.1632 15.0908 75.1666 15.0908V20.0442H73.8804C72.7128 20.0442 71.8371 20.2997 71.2532 20.8105C70.6693 21.3031 70.3775 22.1788 70.3775 23.4377V30.5257H65.6978V15.255H70.3775V17.8001ZM84.3546 30.7446C82.8585 30.7446 81.5085 30.4254 80.3043 29.7868C79.1184 29.1482 78.1788 28.236 77.4856 27.0501C76.8104 25.8642 76.473 24.4776 76.473 22.8903C76.473 21.3213 76.8196 19.9439 77.5129 18.758C78.2061 17.5538 79.1549 16.6325 80.3591 15.9939C81.5632 15.3553 82.9132 15.0361 84.4093 15.0361C85.9054 15.0361 87.2555 15.3553 88.4596 15.9939C89.6638 16.6325 90.6124 17.5538 91.3058 18.758C91.999 19.9439 92.3457 21.3213 92.3457 22.8903C92.3457 24.4594 91.9899 25.846 91.2784 27.0501C90.5851 28.236 89.6272 29.1482 88.4049 29.7868C87.2007 30.4254 85.8506 30.7446 84.3546 30.7446ZM84.3546 26.6943C85.2486 26.6943 86.0057 26.3659 86.626 25.7091C87.2645 25.0523 87.5839 24.1127 87.5839 22.8903C87.5839 21.668 87.2737 20.7284 86.6534 20.0716C86.0513 19.4148 85.3033 19.0864 84.4093 19.0864C83.4971 19.0864 82.74 19.4148 82.1379 20.0716C81.5358 20.7102 81.2348 21.6497 81.2348 22.8903C81.2348 24.1127 81.5267 25.0523 82.1105 25.7091C82.7126 26.3659 83.4606 26.6943 84.3546 26.6943ZM116.749 15.255L112.616 30.5257H107.444L105.036 20.6189L102.546 30.5257H97.4009L93.2411 15.255H97.9208L100.083 26.1744L102.655 15.255H107.608L110.208 26.1196L112.343 15.255H116.749ZM126.196 19.1411H123.679V30.5257H118.999V19.1411H117.302V15.255H118.999V14.8172C118.999 12.938 119.537 11.5149 120.614 10.5479C121.69 9.56275 123.268 9.07014 125.348 9.07014C125.694 9.07014 125.95 9.07927 126.114 9.09751V13.0657C125.221 13.011 124.591 13.1386 124.226 13.4488C123.861 13.759 123.679 14.3154 123.679 15.1182V15.255H126.196V19.1411ZM143.994 15.255L134.416 37.7779H129.38L132.883 30.0057L126.671 15.255H131.898L135.429 24.806L138.931 15.255H143.994Z"
+                            fill="white"
+                        />
+                        <path
+                            d="M23.1565 12.632C23.1565 8.5628 26.4552 5.26406 30.5244 5.26406H37.8924V12.632C37.8924 16.7013 34.5937 20 30.5244 20C26.4552 20 23.1565 16.7013 23.1565 12.632Z"
+                            fill="#FF6D35"
+                        />
+                        <path
+                            d="M30.5243 37.6771C26.4551 37.6771 23.1564 34.3784 23.1564 30.3092V22.9412H30.5243C34.5936 22.9412 37.8923 26.2399 37.8923 30.3092C37.8923 34.3784 34.5936 37.6771 30.5243 37.6771Z"
+                            fill="#5CC97B"
+                        />
+                        <path
+                            d="M20.8348 20.6522C20.8348 12.4754 14.7086 5.84694 7.15147 5.84694V30.0214C7.15147 34.1097 10.2146 37.424 13.9932 37.424C17.7718 37.424 20.8348 34.1097 20.8348 30.0214V20.6522Z"
+                            fill="#3D96F4"
+                        />
+                    </svg>
+                </a>
+                <div class="flex items-center">
+                    <nav
+                        class="flex font-light leading-[26px] not-italic items-center lg:hidden"
+                    >
+                        <ul class="flex gap-9">
+                            <li>
+                                <a href="#" class="hover:opacity-70">Home</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:opacity-70">About</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:opacity-70">Pages</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:opacity-70"
+                                    >Services</a
+                                >
+                            </li>
+                        </ul>
+                        <a
+                            href="#"
+                            class="hover:opacity-70 ml-[28px] text-[18px] font-light leading-[28px] tracking-[1px] mr-[32px] after:content-['0'] after:ml-1 after:px-2 after:py-[4px] after:bg-[#81818b4d] after:rounded-full after:text-[14px] after:w-[30px] after:h-[30px]"
+                            >Cart</a
+                        >
+                    </nav>
+
+                    <button
+                        class="sm:hidden hover:opacity-90 text-[14px] font-medium leading-[22px] tracking-[2px] py-[16px] px-[29px] bg-[#3D96F4] rounded-[50px]"
+                    >
+                        Get started
+                    </button>
+                    <nav
+                        class="py-2 fixed left-0 right-0 top-0 bottom-0 bg-slate-900 hidden opacity-95 overflow-y-scroll z-50"
+                        id="mobile__menu"
+                    >
+                        <div
+                            class="w-full h-full min-h-[300px] flex justify-center items-center"
+                        >
+                            <ul
+                                class="gap-5 flex flex-col items-center justify-center"
+                            >
+                                <li>
+                                    <a href="#" class="hover:opacity-70"
+                                        >Home</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:opacity-70"
+                                        >About</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:opacity-70"
+                                        >Pages</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:opacity-70"
+                                        >Services</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+
+                    <button
+                        id="burger"
+                        class="group relative h-[25px] w-[30px] sm:ml-0 lg:ml-10 lg:block hidden z-50"
+                    >
+                        <span
+                            class="absolute h-[2px] w-full bg-white left-0 top-0 group-[.active]:translate-y-[12px] group-[.active]:rotate-45 transition-transform"
+                        ></span>
+                        <span
+                            class="absolute h-[2px] w-full bg-white left-0 top-1/2 group-[.active]:opacity-0 transition-opacity"
+                        ></span>
+                        <span
+                            class="absolute h-[2px] w-full bg-white left-0 bottom-0 group-[.active]:-translate-y-[12px] group-[.active]:-rotate-45 transition-transform"
+                        ></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main class="mt-11">
+            <section>
+                <div
+                    class="flex mx-auto justify-between max-w-[1280px] px-3 gap-8 lg:flex-wrap"
+                >
+                    <div
+                        class="self-center mt-[-100px] w-[41%] lg:w-[100%] lg:mt-[-30px]"
+                    >
+                        <div class="relative z-0">
+                            <svg
+                                class="absolute top-[-20px] left-[-30px] lg:top-0 lg:left-0 z-0"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="123"
+                                height="123"
+                                viewBox="0 0 123 123"
+                                fill="none"
+                            >
+                                <rect
+                                    x="0.8125"
+                                    y="0.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="16.8125"
+                                    y="0.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="32.8125"
+                                    y="0.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="48.8125"
+                                    y="0.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="64.8125"
+                                    y="0.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="80.8125"
+                                    y="0.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="96.8125"
+                                    y="0.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="112.812"
+                                    y="0.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="0.8125"
+                                    y="16.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="16.8125"
+                                    y="16.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="32.8125"
+                                    y="16.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="48.8125"
+                                    y="16.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="64.8125"
+                                    y="16.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="80.8125"
+                                    y="16.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="96.8125"
+                                    y="16.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="112.812"
+                                    y="16.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="0.8125"
+                                    y="32.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="16.8125"
+                                    y="32.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="32.8125"
+                                    y="32.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="48.8125"
+                                    y="32.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="64.8125"
+                                    y="32.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="80.8125"
+                                    y="32.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="96.8125"
+                                    y="32.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="112.812"
+                                    y="32.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="0.8125"
+                                    y="48.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="16.8125"
+                                    y="48.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="32.8125"
+                                    y="48.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="48.8125"
+                                    y="48.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="64.8125"
+                                    y="48.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="80.8125"
+                                    y="48.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="96.8125"
+                                    y="48.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="112.812"
+                                    y="48.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="0.8125"
+                                    y="64.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="16.8125"
+                                    y="64.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="32.8125"
+                                    y="64.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="48.8125"
+                                    y="64.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="64.8125"
+                                    y="64.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="80.8125"
+                                    y="64.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="96.8125"
+                                    y="64.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="112.812"
+                                    y="64.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="0.8125"
+                                    y="80.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="16.8125"
+                                    y="80.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="32.8125"
+                                    y="80.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="48.8125"
+                                    y="80.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="64.8125"
+                                    y="80.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="80.8125"
+                                    y="80.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="96.8125"
+                                    y="80.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="112.812"
+                                    y="80.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="0.8125"
+                                    y="96.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="16.8125"
+                                    y="96.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="32.8125"
+                                    y="96.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="48.8125"
+                                    y="96.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="64.8125"
+                                    y="96.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="80.8125"
+                                    y="96.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="96.8125"
+                                    y="96.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="112.812"
+                                    y="96.4375"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="0.8125"
+                                    y="112.438"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="16.8125"
+                                    y="112.438"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="32.8125"
+                                    y="112.438"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="48.8125"
+                                    y="112.438"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="64.8125"
+                                    y="112.438"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="80.8125"
+                                    y="112.438"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="96.8125"
+                                    y="112.438"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="112.812"
+                                    y="112.438"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                            </svg>
+                            <h1
+                                class="text-[51.2px] font-medium leading-[61px] sm:text-[40px]"
+                            >
+                                Marketing solutions that grow your business.
+                            </h1>
+                        </div>
+                        <p
+                            class="text-[#9c9c9c] text-lg font-light mt-7 sm:text-base"
+                        >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, suspendisse varius enim in eros elementum
+                            tristique. Duis cursus, mi quis viverra ornare, eros
+                            dolor.
+                        </p>
+                        <div class="flex gap-8 mt-8 sm:flex-wrap">
+                            <button
+                                class="hover:opacity-90 text-[14px] font-medium leading-[22px] tracking-[2px] py-[16px] px-[29px] bg-[#3D96F4] rounded-[50px]"
+                            >
+                                Our services
+                            </button>
+                            <button
+                                class="hover:opacity-90 text-[14px] font-medium leading-[22px] tracking-[2px] py-[16px] px-[29px] bg-[#81818b4d] rounded-[50px]"
+                            >
+                                Contact us
+                            </button>
+                        </div>
+                    </div>
+                    <div class="flex gap-[59px] lg:w-[100%] justify-center">
+                        <div class="max-w-[240px] flex gap-8 flex-col">
+                            <img src="img/1.png" alt="img" />
+                            <img src="img/2.png" alt="img" />
+                        </div>
+                        <div class="max-w-[240px] flex gap-8 flex-col">
+                            <img src="img/3.png" alt="img" />
+                            <img src="img/4.png" alt="img" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div
+                    class="mx-auto flex items-center px-3 max-w-[1280px] flex-col mt-[190px] sm:mt-[150px]"
+                >
+                    <h2 class="text-sm font-light tracking-[1px] uppercase">
+                        TRUSTED BY startups and large enterprises
+                    </h2>
+                    <div class="flex mt-[25px] gap-8 flex-wrap justify-center">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="211"
+                            height="65"
+                            viewBox="0 0 211 65"
+                            fill="none"
+                        >
+                            <path
+                                d="M29.8756 28.2956C32.0298 26.3337 34.9549 25.1886 37.9195 25.0462C38.9342 25.0462 39.9518 25.0519 40.9665 25.0432C40.9147 26.0809 40.9665 27.1214 40.936 28.159C40.7928 30.4784 39.8939 32.7454 38.3796 34.5649C36.4113 37.0122 33.4009 38.6543 30.2047 39.0787C28.8092 39.2938 27.3923 39.1572 25.9877 39.195C26.0121 38.0527 25.9359 36.9076 26.0304 35.7682C26.3046 32.9431 27.7032 30.2371 29.8756 28.2956Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                d="M41.9061 25.0432C42.9939 25.0549 44.0816 25.0374 45.1724 25.049C47.8872 25.2321 50.5655 26.2261 52.6098 27.9498C54.8645 29.7954 56.4096 32.4345 56.8054 35.2538C56.9792 36.5617 56.8695 37.8841 56.9367 39.1978C55.9859 39.195 55.0383 39.1921 54.0875 39.1978C51.7507 39.1368 49.4533 38.416 47.4972 37.2011C46.5953 36.5849 45.669 35.9601 44.9926 35.1055C43.5088 33.5244 42.5002 31.5392 42.1194 29.4466C41.8329 27.9933 41.9487 26.511 41.9061 25.0432Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                d="M25.9898 40.0291C26.9557 40.0813 27.9246 39.9854 28.8874 40.0872C33.0099 40.1714 37.0106 42.3804 39.1464 45.7432C40.3714 47.6266 41.0295 49.8589 40.9442 52.0763C40.9411 52.8035 40.9533 53.5269 40.932 54.2509C39.4024 54.2068 37.8576 54.326 36.3432 54.044C32.9795 53.5038 29.8869 51.5939 28.0251 48.8677C26.6144 46.8854 25.9106 44.4644 25.9837 42.0723C25.9837 41.3892 25.9837 40.7091 25.9898 40.0291Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                d="M51.7884 40.337C53.446 39.9853 55.1548 40.0434 56.8401 40.0434L56.9136 40.1132C56.8768 41.6333 57.0018 43.1708 56.6821 44.6735C56.0085 48.045 53.6686 51.0559 50.5209 52.7097C48.5617 53.7506 46.3131 54.2619 44.0736 54.2388C43.3576 54.242 42.6385 54.2273 41.9225 54.2472C41.9225 52.9888 41.8676 51.7248 42.0169 50.4717C42.3643 47.4404 44.0827 44.6182 46.5538 42.7116C48.0833 41.5606 49.8811 40.7265 51.7884 40.337Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                d="M69.4217 48.6211C69.4217 49.1328 69.2359 49.5657 68.8652 49.92C68.514 50.2547 68.0704 50.422 67.5344 50.422C67.0183 50.422 66.5852 50.2547 66.2345 49.92C65.8838 49.5657 65.7084 49.1328 65.7084 48.6211V30.3775C65.7084 29.8658 65.8838 29.4427 66.2345 29.1082C66.6056 28.7539 67.0598 28.5768 67.5963 28.5768C68.1323 28.5768 68.5654 28.7539 68.8957 29.1082C69.2464 29.4427 69.4217 29.8658 69.4217 30.3775V48.6211Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                d="M84.3275 34.6284C84.8636 34.6284 85.3072 34.8055 85.6584 35.1598C86.0086 35.4943 86.1839 35.9174 86.1839 36.4291V43.9273C86.1839 46.0134 85.5754 47.6665 84.3585 48.8867C83.141 50.1069 81.3875 50.7168 79.0969 50.7168C76.8074 50.7168 75.0534 50.1069 73.8365 48.8867C72.64 47.6665 72.0415 46.0134 72.0415 43.9273V36.4291C72.0415 35.9174 72.2168 35.4943 72.5675 35.1598C72.9182 34.8055 73.3618 34.6284 73.8984 34.6284C74.4349 34.6284 74.878 34.8055 75.2287 35.1598C75.58 35.4943 75.7553 35.9174 75.7553 36.4291V43.9273C75.7553 45.1278 76.0341 46.0232 76.5906 46.6136C77.1476 47.1844 77.9834 47.4697 79.0969 47.4697C80.2325 47.4697 81.0778 47.1844 81.6353 46.6136C82.1918 46.0232 82.4706 45.1278 82.4706 43.9273V36.4291C82.4706 35.9174 82.646 35.4943 82.9967 35.1598C83.3474 34.8055 83.791 34.6284 84.3275 34.6284Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                d="M97.3533 34.3333C99.0039 34.3333 100.221 34.717 101.005 35.4845C101.789 36.2324 102.305 37.2065 102.552 38.407L102.026 38.1413L102.274 37.669C102.521 37.2163 102.903 36.7342 103.419 36.2225C103.935 35.6912 104.554 35.2484 105.276 34.8941C106.018 34.5202 106.844 34.3333 107.751 34.3333C109.237 34.3333 110.361 34.6383 111.125 35.2483C111.909 35.8584 112.445 36.6752 112.734 37.6986C113.023 38.7022 113.167 39.824 113.167 41.0639V48.6211C113.167 49.1328 112.992 49.5656 112.641 49.92C112.29 50.2547 111.847 50.422 111.31 50.422C110.774 50.422 110.33 50.2547 109.98 49.92C109.629 49.5656 109.453 49.1328 109.453 48.6211V41.0639C109.453 40.4144 109.371 39.8339 109.206 39.3221C109.041 38.7908 108.742 38.3677 108.308 38.0528C107.875 37.7379 107.256 37.5804 106.452 37.5804C105.668 37.5804 104.997 37.7379 104.44 38.0528C103.883 38.3677 103.46 38.7908 103.171 39.3221C102.903 39.8339 102.769 40.4144 102.769 41.0639V48.6211C102.769 49.1328 102.593 49.5656 102.243 49.92C101.892 50.2547 101.448 50.422 100.912 50.422C100.376 50.422 99.9321 50.2547 99.5819 49.92C99.2307 49.5656 99.0553 49.1328 99.0553 48.6211V41.0639C99.0553 40.4144 98.9729 39.8339 98.8075 39.3221C98.6427 38.7908 98.3434 38.3677 97.9103 38.0528C97.4772 37.7379 96.8577 37.5804 96.0534 37.5804C95.2696 37.5804 94.5991 37.7379 94.0416 38.0528C93.4851 38.3677 93.0619 38.7908 92.7732 39.3221C92.5049 39.8339 92.371 40.4144 92.371 41.0639V48.6211C92.371 49.1328 92.1957 49.5656 91.845 49.92C91.4938 50.2547 91.0507 50.422 90.5141 50.422C89.9776 50.422 89.5345 50.2547 89.1832 49.92C88.8325 49.5656 88.6572 49.1328 88.6572 48.6211V36.4292C88.6572 35.9175 88.8325 35.4943 89.1832 35.1598C89.5345 34.8055 89.9776 34.6285 90.5141 34.6285C91.0507 34.6285 91.4938 34.8055 91.845 35.1598C92.1957 35.4943 92.371 35.9175 92.371 36.4292V37.6986L91.9064 37.61C92.0923 37.2754 92.3506 36.9211 92.6803 36.5472C93.0105 36.1536 93.4126 35.7895 93.8872 35.455C94.3618 35.1204 94.8879 34.8547 95.4654 34.6579C96.0434 34.4415 96.6729 34.3333 97.3533 34.3333Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                d="M119.136 48.6211C119.136 49.1328 118.961 49.5656 118.609 49.92C118.259 50.2547 117.816 50.422 117.279 50.422C116.743 50.422 116.299 50.2547 115.948 49.92C115.598 49.5656 115.423 49.1328 115.423 48.6211V36.4292C115.423 35.9175 115.598 35.4943 115.948 35.1598C116.299 34.8055 116.743 34.6285 117.279 34.6285C117.816 34.6285 118.259 34.8055 118.609 35.1598C118.961 35.4943 119.136 35.9175 119.136 36.4292V48.6211ZM117.248 32.7096C116.547 32.7096 116.052 32.6014 115.762 32.3849C115.474 32.1684 115.33 31.7846 115.33 31.2336V30.6727C115.33 30.102 115.485 29.7182 115.793 29.5214C116.124 29.3049 116.619 29.1967 117.279 29.1967C118.002 29.1967 118.507 29.3049 118.795 29.5214C119.085 29.7379 119.229 30.1217 119.229 30.6727V31.2336C119.229 31.8043 119.074 32.1979 118.764 32.4144C118.456 32.6112 117.95 32.7096 117.248 32.7096Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                d="M130.256 34.3333C131.783 34.3333 132.938 34.6383 133.722 35.2483C134.527 35.8584 135.073 36.6752 135.362 37.6986C135.672 38.7022 135.826 39.824 135.826 41.0639V48.6211C135.826 49.1328 135.651 49.5656 135.3 49.92C134.95 50.2547 134.506 50.422 133.969 50.422C133.433 50.422 132.99 50.2547 132.639 49.92C132.288 49.5656 132.112 49.1328 132.112 48.6211V41.0639C132.112 40.4144 132.02 39.8339 131.835 39.3221C131.669 38.7908 131.36 38.3677 130.906 38.0528C130.452 37.7379 129.802 37.5804 128.956 37.5804C128.131 37.5804 127.429 37.7379 126.852 38.0528C126.295 38.3677 125.862 38.7908 125.552 39.3221C125.263 39.8339 125.118 40.4144 125.118 41.0639V48.6211C125.118 49.1328 124.944 49.5656 124.593 49.92C124.242 50.2547 123.798 50.422 123.262 50.422C122.725 50.422 122.282 50.2547 121.932 49.92C121.58 49.5656 121.405 49.1328 121.405 48.6211V36.4292C121.405 35.9175 121.58 35.4943 121.932 35.1598C122.282 34.8055 122.725 34.6285 123.262 34.6285C123.798 34.6285 124.242 34.8055 124.593 35.1598C124.944 35.4943 125.118 35.9175 125.118 36.4292V37.6986L124.655 37.61C124.841 37.2754 125.108 36.9211 125.459 36.5472C125.81 36.1536 126.223 35.7895 126.697 35.455C127.172 35.1204 127.708 34.8547 128.306 34.6579C128.905 34.4415 129.555 34.3333 130.256 34.3333Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                d="M154.2 42.5398C154.2 44.1536 153.818 45.5805 153.055 46.8203C152.312 48.0405 151.301 48.995 150.022 49.6837C148.763 50.3728 147.35 50.7168 145.782 50.7168C144.214 50.7168 142.79 50.3728 141.512 49.6837C140.253 48.995 139.242 48.0405 138.479 46.8203C137.736 45.5805 137.365 44.1536 137.365 42.5398C137.365 40.9261 137.736 39.5091 138.479 38.2889C139.242 37.0491 140.253 36.0848 141.512 35.396C142.79 34.6875 144.214 34.3333 145.782 34.3333C147.35 34.3333 148.763 34.6875 150.022 35.396C151.301 36.0848 152.312 37.0491 153.055 38.2889C153.818 39.5091 154.2 40.9261 154.2 42.5398ZM150.486 42.5398C150.486 41.5362 150.27 40.6703 149.836 39.9421C149.423 39.1942 148.856 38.6137 148.134 38.2004C147.433 37.7871 146.649 37.5804 145.782 37.5804C144.916 37.5804 144.121 37.7871 143.399 38.2004C142.698 38.6137 142.13 39.1942 141.697 39.9421C141.285 40.6703 141.078 41.5362 141.078 42.5398C141.078 43.5239 141.285 44.3898 141.697 45.1377C142.13 45.8658 142.698 46.4365 143.399 46.8498C144.121 47.2632 144.916 47.4697 145.782 47.4697C146.649 47.4697 147.433 47.2632 148.134 46.8498C148.856 46.4365 149.423 45.8658 149.836 45.1377C150.27 44.3898 150.486 43.5239 150.486 42.5398Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                d="M168.041 34.6284C168.577 34.6284 169.021 34.8055 169.372 35.1598C169.722 35.4943 169.898 35.9174 169.898 36.4291V43.9273C169.898 46.0134 169.289 47.6665 168.072 48.8867C166.854 50.1069 165.101 50.7168 162.811 50.7168C160.521 50.7168 158.767 50.1069 157.55 48.8867C156.353 47.6665 155.755 46.0134 155.755 43.9273V36.4291C155.755 35.9174 155.93 35.4943 156.281 35.1598C156.632 34.8055 157.075 34.6284 157.612 34.6284C158.148 34.6284 158.592 34.8055 158.943 35.1598C159.293 35.4943 159.469 35.9174 159.469 36.4291V43.9273C159.469 45.1278 159.747 46.0232 160.304 46.6136C160.861 47.1844 161.697 47.4697 162.811 47.4697C163.945 47.4697 164.792 47.1844 165.348 46.6136C165.906 46.0232 166.184 45.1278 166.184 43.9273V36.4291C166.184 35.9174 166.36 35.4943 166.71 35.1598C167.061 34.8055 167.505 34.6284 168.041 34.6284Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                d="M171.411 47.9716C171.205 47.6961 171.112 47.3419 171.133 46.9089C171.154 46.4759 171.422 46.102 171.938 45.7871C172.268 45.5903 172.618 45.5116 172.99 45.551C173.361 45.5707 173.722 45.7477 174.073 46.0823C174.672 46.653 175.301 47.0958 175.961 47.4107C176.621 47.7256 177.446 47.883 178.436 47.883C178.746 47.8633 179.086 47.824 179.458 47.765C179.829 47.6863 180.149 47.5288 180.417 47.2927C180.705 47.0368 180.85 46.653 180.85 46.1413C180.85 45.7084 180.695 45.364 180.386 45.1081C180.076 44.8523 179.664 44.6359 179.148 44.4587C178.653 44.2816 178.096 44.1143 177.477 43.9569C176.837 43.7797 176.177 43.583 175.496 43.3665C174.836 43.15 174.227 42.8745 173.67 42.5398C173.114 42.1856 172.66 41.7232 172.309 41.1524C171.958 40.5817 171.783 39.8633 171.783 38.9975C171.783 38.0134 172.071 37.177 172.649 36.4882C173.227 35.7994 173.97 35.2681 174.877 34.8941C175.806 34.5202 176.775 34.3333 177.786 34.3333C178.426 34.3333 179.096 34.4119 179.798 34.5694C180.499 34.7072 181.17 34.9433 181.81 35.2779C182.449 35.5927 182.986 36.0159 183.419 36.5472C183.645 36.8424 183.78 37.1967 183.821 37.61C183.862 38.0233 183.666 38.3972 183.233 38.7318C182.924 38.9679 182.563 39.0762 182.15 39.0565C181.738 39.0171 181.397 38.8794 181.129 38.6432C180.778 38.2102 180.304 37.8658 179.705 37.61C179.127 37.3542 178.457 37.2262 177.694 37.2262C177.384 37.2262 177.044 37.2656 176.672 37.3443C176.322 37.4033 176.012 37.551 175.744 37.7871C175.476 38.0036 175.342 38.3578 175.342 38.8498C175.342 39.3025 175.496 39.6666 175.806 39.9421C176.115 40.1979 176.528 40.4144 177.044 40.5916C177.58 40.749 178.148 40.9065 178.746 41.0639C179.365 41.2213 179.994 41.4083 180.634 41.6247C181.274 41.8413 181.861 42.1266 182.398 42.4808C182.934 42.8351 183.367 43.2976 183.697 43.8683C184.028 44.4193 184.192 45.1278 184.192 45.9938C184.192 46.9975 183.883 47.8536 183.264 48.562C182.645 49.2706 181.871 49.8117 180.943 50.1857C180.015 50.5401 179.065 50.7168 178.096 50.7168C176.879 50.7168 175.662 50.5204 174.444 50.1267C173.227 49.7132 172.216 48.995 171.411 47.9716Z"
+                                fill="#81818B"
+                            />
+                        </svg>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="211"
+                            height="65"
+                            viewBox="0 0 211 65"
+                            fill="none"
+                        >
+                            <path
+                                d="M23.1739 45.3943L34.8335 40.3411L41.5445 44.1308L42.9002 56.564L34.6301 56.4979L35.8503 47.8539L34.4267 47.0561L27.4445 52.3753L23.1739 45.3943Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                d="M42.2906 43.5985L52.5945 50.9783L56.6616 43.8645L48.3913 40.6066V39.0109L56.6616 35.6866L52.5945 28.6389L42.2906 36.019V43.5985Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                d="M41.5445 35.4209L42.9002 22.9878L34.6301 23.1208L35.8503 31.7641L34.4267 32.5619L27.3767 27.243L23.1739 34.1576L34.8335 39.2107L41.5445 35.4209Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                d="M84.2524 38.2858V49.934H88.7034V35.0895H82.2217V38.2858H84.2524Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                d="M84.1133 33.0038C84.5213 33.4191 85.1429 33.6267 85.9771 33.6267C86.8124 33.6267 87.424 33.4191 87.813 33.0038C88.2215 32.5702 88.4252 32.0284 88.4252 31.3785C88.4252 30.7102 88.2215 30.1685 87.813 29.7532C87.424 29.3198 86.8124 29.103 85.9771 29.103C85.1429 29.103 84.5213 29.3198 84.1133 29.7532C83.7243 30.1685 83.5295 30.7102 83.5295 31.3785C83.5295 32.0284 83.7243 32.5702 84.1133 33.0038Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                d="M68.7576 49.6087C70.0186 50.1684 71.5669 50.4486 73.4028 50.4486C75.128 50.4486 76.6111 50.1864 77.8543 49.6629C79.097 49.1393 80.0519 48.4078 80.7192 47.4686C81.4059 46.5115 81.7487 45.401 81.7487 44.1368C81.7487 42.9089 81.4248 41.8705 80.7754 41.0216C80.1443 40.1549 79.2639 39.4777 78.1325 38.9902C77.0012 38.4844 75.6934 38.1684 74.2097 38.0422L72.6521 37.9067C71.7249 37.8343 71.0571 37.5907 70.6492 37.1752C70.2407 36.7599 70.037 36.2722 70.037 35.7126C70.037 35.279 70.1489 34.8818 70.3704 34.5206C70.5935 34.1414 70.9269 33.8434 71.3721 33.6266C71.8362 33.4101 72.4016 33.3017 73.0694 33.3017C73.774 33.3017 74.3583 33.4279 74.8219 33.6809C74.9237 33.7344 75.0209 33.7915 75.1117 33.8521L75.1337 33.8672C75.1678 33.8901 75.2015 33.9139 75.234 33.9379C75.5159 34.1474 75.7401 34.3959 75.9071 34.6832C76.1475 35.0805 76.2688 35.5228 76.2688 36.0105H80.7192C80.7192 34.7101 80.4131 33.5815 79.8015 32.6245C79.1899 31.6493 78.3089 30.8999 77.1592 30.376C76.0273 29.8343 74.6644 29.5634 73.0694 29.5634C71.5485 29.5634 70.2318 29.8164 69.1188 30.3219C68.0063 30.8096 67.1348 31.5138 66.5043 32.4347C65.8916 33.3557 65.5856 34.4484 65.5856 35.7126C65.5856 37.4642 66.1888 38.8727 67.3942 39.9383C68.5996 41.0037 70.2134 41.6177 72.2347 41.7802L73.7651 41.9157C75.0072 42.0241 75.9071 42.2679 76.4636 42.6469C77.0195 43.0081 77.2978 43.5047 77.2978 44.1368C77.2978 44.4273 77.249 44.6997 77.1513 44.9543C77.0789 45.1433 76.9791 45.3222 76.8531 45.4913C76.5554 45.8703 76.1202 46.1683 75.5453 46.3854C74.9704 46.6019 74.2565 46.7102 73.4028 46.7102C72.4573 46.7102 71.6876 46.584 71.0944 46.3308C70.5006 46.0601 70.0559 45.7079 69.7583 45.2748C69.4805 44.8411 69.3419 44.3717 69.3419 43.8659H64.9183C64.9183 45.1481 65.2427 46.286 65.8916 47.2789C66.5411 48.2543 67.496 49.0311 68.7576 49.6087Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                d="M98.6348 50.1233C97.095 50.1233 95.8528 49.943 94.9068 49.5815C93.9607 49.2025 93.2656 48.5792 92.8204 47.7125C92.3941 46.8275 92.1805 45.6359 92.1805 44.1368V38.2587H89.8715V35.0895H92.1805V31.0806H96.3253V35.0895H100.777V38.2587H96.3253V44.2996C96.3253 45.0038 96.5112 45.5455 96.8818 45.9245C97.2714 46.286 97.8184 46.4664 98.5235 46.4664H100.777V50.1233H98.6348Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M106.136 49.7984C107.137 50.2316 108.287 50.4486 109.585 50.4486C110.865 50.4486 111.997 50.2316 112.979 49.7984C113.962 49.3648 114.779 48.7599 115.427 47.9836C116.076 47.2068 116.513 46.3218 116.735 45.3289H112.646C112.46 45.7804 112.108 46.1594 111.589 46.4663C111.069 46.7733 110.401 46.9272 109.585 46.9272C109.08 46.9272 108.628 46.8686 108.23 46.7522C107.927 46.6637 107.656 46.5415 107.415 46.3854C106.859 46.0243 106.451 45.5182 106.191 44.8683C106.119 44.6832 106.058 44.4895 106.006 44.2878C105.953 44.0834 105.91 43.8708 105.878 43.6494H117.013V42.1865C117.013 40.8321 116.716 39.5861 116.123 38.4485C115.529 37.2925 114.667 36.3625 113.536 35.6583C112.423 34.9359 111.051 34.5747 109.418 34.5747C108.176 34.5747 107.063 34.7915 106.08 35.2249C105.116 35.6402 104.309 36.209 103.66 36.9314C103.011 37.6537 102.51 38.4756 102.157 39.3966C101.824 40.2993 101.657 41.2474 101.657 42.2407V42.7824C101.657 43.7397 101.824 44.6786 102.157 45.5997C102.51 46.5026 103.011 47.3241 103.66 48.0646C104.327 48.7872 105.152 49.3648 106.136 49.7984ZM105.955 40.9708C105.967 40.9135 105.98 40.857 105.994 40.8014C106.033 40.6483 106.077 40.5015 106.128 40.3613C106.157 40.2814 106.187 40.2035 106.22 40.1278C106.497 39.4596 106.906 38.954 107.443 38.611C107.644 38.4827 107.862 38.3784 108.096 38.2982C108.49 38.1636 108.931 38.0963 109.418 38.0963C110.179 38.0963 110.809 38.2679 111.31 38.611C111.829 38.9359 112.219 39.4145 112.479 40.0465C112.5 40.0975 112.52 40.1495 112.539 40.202C112.569 40.2858 112.598 40.3717 112.625 40.4598C112.664 40.5909 112.698 40.7266 112.728 40.8668C112.751 40.9702 112.769 41.076 112.786 41.1844H105.912C105.925 41.112 105.939 41.0409 105.955 40.9708Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                d="M118.85 49.934V35.0895H122.383V38.8282C122.431 38.6059 122.486 38.3926 122.546 38.1881C122.599 38.0157 122.655 37.8495 122.717 37.6899C123.106 36.6785 123.69 35.9202 124.469 35.4144C125.248 34.8907 126.203 34.629 127.335 34.629H127.529C128.679 34.629 129.634 34.8907 130.395 35.4144C131.174 35.9202 131.758 36.6785 132.147 37.6899L132.178 37.7662L132.204 37.836C132.222 37.7867 132.24 37.7381 132.258 37.6899C132.666 36.6785 133.26 35.9202 134.039 35.4144C134.818 34.8907 135.773 34.629 136.905 34.629H137.099C138.249 34.629 139.213 34.8907 139.992 35.4144C140.79 35.9202 141.393 36.6785 141.8 37.6899C142.208 38.7012 142.413 39.9654 142.413 41.4823V49.934H137.961V41.2384C137.961 40.4258 137.739 39.7667 137.294 39.2611C136.867 38.7553 136.255 38.5025 135.458 38.5025C134.66 38.5025 134.03 38.7645 133.566 39.2881C133.103 39.7937 132.871 40.4709 132.871 41.3198V49.934H128.392V41.2384C128.392 40.4258 128.169 39.7667 127.724 39.2611C127.298 38.7553 126.694 38.5025 125.916 38.5025C125.1 38.5025 124.46 38.7645 123.996 39.2881C123.533 39.7937 123.301 40.4709 123.301 41.3198V49.934H118.85Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M154.303 47.0736V49.9341H157.835V40.8322C157.835 39.4597 157.557 38.3402 157.001 37.4732C156.444 36.5883 155.629 35.9293 154.553 35.4959C153.496 35.0625 152.188 34.8457 150.63 34.8457C150.293 34.8457 149.94 34.8492 149.573 34.8564C149.356 34.8608 149.133 34.8662 148.906 34.8728C148.293 34.8909 147.7 34.9179 147.125 34.9541L146.686 34.9829C146.46 34.9982 146.249 35.0132 146.049 35.0285C145.9 35.0398 145.757 35.0512 145.623 35.0625V38.7195C146.198 38.6832 146.838 38.6471 147.543 38.6111C147.74 38.601 147.935 38.5916 148.129 38.5829C148.409 38.5703 148.685 38.5593 148.959 38.5498C149.175 38.5421 149.389 38.5353 149.601 38.5297C150.269 38.5116 150.807 38.5026 151.215 38.5026C152.03 38.5026 152.624 38.6922 152.995 39.0715C153.366 39.4507 153.551 40.0196 153.551 40.7782V40.8322H150.797C149.444 40.8322 148.247 41.0038 147.208 41.347C146.17 41.672 145.363 42.1866 144.789 42.8909C144.213 43.5773 143.926 44.4621 143.926 45.5456C143.926 46.5389 144.158 47.3967 144.621 48.1193C145.085 48.8231 145.725 49.3649 146.541 49.7439C147.376 50.1234 148.34 50.3131 149.434 50.3131C150.491 50.3131 151.382 50.1234 152.105 49.7439C152.847 49.3649 153.422 48.8231 153.83 48.1193C153.902 48.0003 153.968 47.8772 154.031 47.7493C154.119 47.5685 154.198 47.3783 154.267 47.1787L154.303 47.0736ZM153.551 44.4351V43.2431H150.769C149.99 43.2431 149.388 43.4327 148.961 43.812C148.553 44.1732 148.349 44.6698 148.349 45.3018C148.349 45.5993 148.4 45.8696 148.501 46.1134C148.604 46.3577 148.757 46.5747 148.961 46.7644C149.388 47.126 149.99 47.3063 150.769 47.3063C150.917 47.3063 151.061 47.2991 151.199 47.2853C151.312 47.2736 151.422 47.2571 151.529 47.236C151.732 47.1958 151.925 47.1376 152.105 47.0624C152.513 46.8821 152.847 46.5841 153.106 46.1684C153.366 45.7532 153.515 45.1751 153.551 44.4351Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                d="M160.499 49.9341V35.0895H164.033V39.9892C164.202 38.5905 164.628 37.4627 165.312 36.6065C166.24 35.4689 167.574 34.9 169.318 34.9H169.903V38.6381H168.79C167.566 38.6381 166.62 38.9631 165.952 39.6132C165.284 40.2453 164.95 41.1664 164.95 42.3761V49.9341H160.499Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                d="M175.547 42.9993H177.021L181.834 49.9341H186.841L180.739 41.4174L185.756 35.0896H181.083L175.547 42.1478V30.1595H171.096V49.9341H175.547V42.9993Z"
+                                fill="#81818B"
+                            />
+                        </svg>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="211"
+                            height="65"
+                            viewBox="0 0 211 65"
+                            fill="none"
+                        >
+                            <path
+                                d="M71.2482 30.8004C72.8358 30.8004 74.2097 31.0559 75.3705 31.567C76.548 32.0781 77.4521 32.8034 78.0837 33.7432C78.7152 34.6829 79.0313 35.7957 79.0313 37.0816C79.0313 38.351 78.7152 39.4638 78.0837 40.42C77.4521 41.3597 76.548 42.0851 75.3705 42.5964C74.2097 43.0907 72.8358 43.3381 71.2482 43.3381H67.6388V48.1109H63.4918V30.8004H71.2482ZM71.0182 40.0738C72.2635 40.0738 73.2111 39.8183 73.8595 39.3072C74.5084 38.7796 74.8323 38.0378 74.8323 37.0816C74.8323 36.1089 74.5084 35.367 73.8595 34.856C73.2111 34.3284 72.2635 34.0647 71.0182 34.0647H67.6388V40.0738H71.0182Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                d="M84.2451 36.5623C84.7223 35.9194 85.3628 35.433 86.1645 35.1033C86.984 34.7736 87.9222 34.6088 88.9806 34.6088V38.1697C88.5369 38.1368 88.2382 38.1203 88.0844 38.1203C86.9409 38.1203 86.0453 38.4335 85.3969 39.06C84.748 39.6699 84.4236 40.5932 84.4236 41.8296V48.111H80.4304V34.8066H84.2451V36.5623Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                d="M96.5038 48.3085C95.0533 48.3085 93.7476 48.0203 92.5873 47.4431C91.4439 46.8498 90.5477 46.0334 89.8993 44.9948C89.251 43.9562 88.9265 42.7774 88.9265 41.4587C88.9265 40.1398 89.251 38.9611 89.8993 37.9224C90.5477 36.8838 91.4439 36.076 92.5873 35.499C93.7476 34.9055 95.0533 34.6088 96.5038 34.6088C97.9544 34.6088 99.2517 34.9055 100.395 35.499C101.539 36.076 102.435 36.8838 103.084 37.9224C103.732 38.9611 104.056 40.1398 104.056 41.4587C104.056 42.7774 103.732 43.9562 103.084 44.9948C102.435 46.0334 101.539 46.8498 100.395 47.4431C99.2517 48.0203 97.9544 48.3085 96.5038 48.3085ZM96.5038 45.1432C97.5281 45.1432 98.3644 44.8138 99.0128 44.1541C99.6785 43.4783 100.011 42.5799 100.011 41.4587C100.011 40.3377 99.6785 39.4474 99.0128 38.7879C98.3644 38.112 97.5281 37.774 96.5038 37.774C95.4801 37.774 94.6354 38.112 93.9697 38.7879C93.304 39.4474 92.9711 40.3377 92.9711 41.4587C92.9711 42.5799 93.304 43.4783 93.9697 44.1541C94.6354 44.8138 95.4801 45.1432 96.5038 45.1432Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                d="M122.163 30.8004V48.1109H118.758L109.823 37.6009V48.1109H105.727V30.8004H109.157L118.067 41.3103V30.8004H122.163Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                d="M130.396 34.6088C132.529 34.6088 134.168 35.1033 135.311 36.0925C136.455 37.0652 137.026 38.5407 137.026 40.519V48.111H133.289V46.4539C132.538 47.6905 131.139 48.3085 129.091 48.3085C128.032 48.3085 127.11 48.1357 126.325 47.7894C125.558 47.4431 124.969 46.9652 124.559 46.355C124.15 45.7452 123.945 45.0525 123.945 44.2778C123.945 43.0413 124.423 42.0687 125.378 41.3598C126.351 40.6509 127.845 40.2965 129.859 40.2965H133.033C133.033 39.4556 132.769 38.8127 132.239 38.3676C131.71 37.9059 130.917 37.6751 129.859 37.6751C129.125 37.6751 128.399 37.7905 127.683 38.0214C126.983 38.2357 126.385 38.5325 125.89 38.9116L124.457 36.2161C125.208 35.7051 126.103 35.3094 127.144 35.0291C128.203 34.7489 129.287 34.6088 130.396 34.6088ZM130.089 45.7122C130.772 45.7122 131.377 45.5638 131.906 45.2669C132.435 44.9536 132.811 44.5004 133.033 43.9067V42.547H130.294C128.655 42.547 127.836 43.066 127.836 44.1047C127.836 44.5994 128.032 44.9948 128.425 45.2917C128.834 45.572 129.389 45.7122 130.089 45.7122Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                d="M148.244 47.4678C147.852 47.7481 147.365 47.9625 146.785 48.1109C146.222 48.2425 145.624 48.3084 144.993 48.3084C143.355 48.3084 142.083 47.9048 141.179 47.0971C140.291 46.289 139.847 45.102 139.847 43.536V38.0708H137.723V35.1033H139.847V31.8638H143.841V35.1033H147.271V38.0708H143.841V43.4865C143.841 44.0469 143.986 44.4839 144.276 44.7972C144.583 45.0937 145.01 45.2421 145.556 45.2421C146.188 45.2421 146.725 45.0772 147.169 44.7478L148.244 47.4678Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                d="M163.082 34.8066V48.111H159.293V46.5282C158.764 47.105 158.132 47.5503 157.398 47.8637C156.664 48.1605 155.871 48.3085 155.017 48.3085C153.208 48.3085 151.775 47.806 150.716 46.8003C149.658 45.7947 149.129 44.3026 149.129 42.3244V34.8066H153.123V41.7554C153.123 43.8985 154.053 44.9701 155.913 44.9701C156.869 44.9701 157.637 44.6737 158.218 44.0799C158.797 43.4701 159.088 42.5718 159.088 41.3846V34.8066H163.082Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                d="M169.316 36.5623C169.793 35.9194 170.434 35.433 171.236 35.1033C172.055 34.7736 172.994 34.6088 174.052 34.6088V38.1697C173.608 38.1368 173.309 38.1203 173.156 38.1203C172.012 38.1203 171.116 38.4335 170.468 39.06C169.819 39.6699 169.495 40.5932 169.495 41.8296V48.111H165.501V34.8066H169.316V36.5623Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                d="M188.513 41.5084C188.513 41.5574 188.488 41.9037 188.436 42.547H178.017C178.204 43.3712 178.648 44.0222 179.348 44.5004C180.048 44.9783 180.918 45.2174 181.959 45.2174C182.676 45.2174 183.307 45.1185 183.853 44.9206C184.417 44.7066 184.937 44.3768 185.415 43.9315L187.54 46.1571C186.243 47.5915 184.348 48.3085 181.856 48.3085C180.304 48.3085 178.93 48.0203 177.735 47.4431C176.54 46.8498 175.619 46.0334 174.97 44.9948C174.321 43.9562 173.997 42.7774 173.997 41.4587C173.997 40.1563 174.313 38.9858 174.945 37.9472C175.593 36.892 176.472 36.076 177.581 35.499C178.708 34.9055 179.962 34.6088 181.345 34.6088C182.693 34.6088 183.913 34.889 185.006 35.4495C186.098 36.01 186.951 36.8179 187.566 37.873C188.197 38.9116 188.513 40.1233 188.513 41.5084ZM181.37 37.5268C180.466 37.5268 179.706 37.774 179.092 38.2686C178.477 38.7633 178.102 39.4392 177.965 40.2965H184.75C184.613 39.4556 184.237 38.7879 183.623 38.2934C183.009 37.7823 182.258 37.5268 181.37 37.5268Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M40.748 21.1602C40.1395 20.8201 39.3893 20.8201 38.7808 21.1602C34.4588 23.5752 31.5437 28.0939 31.5437 33.2725C31.5437 34.0105 31.603 34.7352 31.717 35.4423C28.7418 34.4663 25.5203 34.8214 22.889 36.286C22.2799 36.6251 21.9048 37.2526 21.9054 37.9317C21.9085 41.5141 23.835 45.0055 27.2853 46.9297C28.978 47.8739 30.8256 48.3225 32.6479 48.3233C32.3707 49.0824 32.2198 49.8987 32.2198 50.7493C32.2198 54.7743 35.5976 58.0366 39.7641 58.0366C43.9309 58.0366 47.3084 54.7743 47.3084 50.7493C47.3084 49.8966 47.1568 49.0786 46.8785 48.3184C48.5923 48.266 50.3184 47.8166 51.9079 46.9297C55.3586 45.0055 57.2848 41.5141 57.2874 37.9318C57.2885 37.2528 56.9131 36.6252 56.3041 36.2862C53.7767 34.8792 50.7042 34.4961 47.8291 35.3333C47.932 34.6608 47.9849 33.9727 47.9849 33.2725C47.9849 28.0939 45.0701 23.5752 40.748 21.1602ZM35.4724 33.2725C35.4724 29.9096 37.1581 26.9253 39.7644 25.0677C42.3707 26.9253 44.0564 29.9096 44.0564 33.2725C44.0564 36.6352 42.3707 39.6196 39.7644 41.4771C37.1581 39.6196 35.4724 36.6352 35.4724 33.2725ZM47.5115 39.5744C49.3256 38.5626 51.4217 38.445 53.2528 39.0851C52.9115 40.937 51.7576 42.6315 49.9436 43.6433C48.1296 44.655 46.0334 44.7725 44.2024 44.1327C44.5438 42.2806 45.6975 40.5861 47.5115 39.5744ZM25.9405 39.085C27.7715 38.4448 29.8676 38.5625 31.6816 39.5742C33.4958 40.5859 34.6493 42.2806 34.9909 44.1322C33.1598 44.7725 31.0638 44.655 29.2497 43.6433C27.4356 42.6315 26.2821 40.9368 25.9405 39.085ZM36.1485 50.7493C36.1485 48.8205 37.7673 47.2567 39.7641 47.2567C41.7609 47.2567 43.3798 48.8205 43.3798 50.7493C43.3798 52.678 41.7609 54.2419 39.7641 54.2419C37.7673 54.2419 36.1485 52.678 36.1485 50.7493Z"
+                                fill="#81818B"
+                            />
+                        </svg>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="211"
+                            height="65"
+                            viewBox="0 0 211 65"
+                            fill="none"
+                        >
+                            <path
+                                d="M75.8865 51.8316C73.5298 51.8316 71.4466 51.3567 69.6369 50.4079C67.8267 49.4371 66.4276 48.0673 65.4385 46.2989C64.4499 44.5302 63.9554 42.4487 63.9554 40.0545C63.9554 37.6603 64.4499 35.5789 65.4385 33.8102C66.4276 32.0199 67.8267 30.6503 69.6369 29.7012C71.4466 28.7305 73.5298 28.2452 75.8865 28.2452C77.4862 28.2452 78.8958 28.4178 80.1165 28.7629C81.3581 29.0864 82.4942 29.6041 83.5253 30.3159V35.0072C82.5997 34.2308 81.5371 33.67 80.3375 33.3248C79.1589 32.9582 77.8122 32.7748 76.2971 32.7748C74.8875 32.7748 73.6138 33.0768 72.4777 33.6807C71.3626 34.2631 70.4785 35.1043 69.8265 36.2043C69.1739 37.3044 68.8479 38.5877 68.8479 40.0545C68.8479 41.5428 69.1424 42.8477 69.7314 43.9694C70.342 45.0694 71.1941 45.9214 72.2882 46.5253C73.3823 47.1293 74.6454 47.4313 76.0761 47.4313C77.3807 47.4313 78.5168 47.194 79.4849 46.7195V42.3516H75.918V38.728H84.1248V49.6314C82.0416 51.098 79.2959 51.8316 75.8865 51.8316Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                d="M85.2331 35.8161H89.8415V38.0486C90.4521 37.2936 91.3042 36.722 92.3983 36.3338C93.4924 35.924 94.7345 35.7191 96.1232 35.7191V39.4398C94.671 39.4398 93.3874 39.6663 92.2723 40.1192C91.1777 40.5722 90.4201 41.2624 89.9996 42.1899V51.3463H85.2331V35.8161Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                d="M105.283 51.8316C102.379 51.8316 100.095 51.1195 98.4332 49.6958C96.7705 48.2511 95.9395 46.2342 95.9395 43.6458C95.9395 41.079 96.676 39.0515 98.1492 37.5633C99.6433 36.0749 101.769 35.3308 104.525 35.3308C106.335 35.3308 107.871 35.6759 109.134 36.3661C110.396 37.0563 111.354 38.0162 112.006 39.2456C112.659 40.4535 112.985 41.8232 112.985 43.3546V45.3282H100.485C100.821 47.3127 102.631 48.305 105.914 48.305C106.882 48.305 107.882 48.2187 108.913 48.0459C109.944 47.8734 110.838 47.6361 111.596 47.3342V50.764C110.859 51.0871 109.912 51.3462 108.755 51.5405C107.598 51.7342 106.44 51.8316 105.283 51.8316ZM108.471 42.1575C108.408 41.1222 108.029 40.3241 107.335 39.7633C106.64 39.181 105.682 38.8897 104.462 38.8897C103.263 38.8897 102.316 39.181 101.621 39.7633C100.927 40.3457 100.548 41.1438 100.485 42.1575H108.471Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                d="M122.754 51.8316C119.851 51.8316 117.567 51.1195 115.905 49.6958C114.242 48.2511 113.411 46.2342 113.411 43.6458C113.411 41.079 114.147 39.0515 115.621 37.5633C117.115 36.0749 119.24 35.3308 121.997 35.3308C123.806 35.3308 125.343 35.6759 126.606 36.3661C127.868 37.0563 128.825 38.0162 129.477 39.2456C130.13 40.4535 130.456 41.8232 130.456 43.3546V45.3282H117.956C118.293 47.3127 120.103 48.305 123.386 48.305C124.354 48.305 125.354 48.2187 126.384 48.0459C127.415 47.8734 128.31 47.6361 129.067 47.3342V50.764C128.331 51.0871 127.384 51.3462 126.227 51.5405C125.069 51.7342 123.912 51.8316 122.754 51.8316ZM125.943 42.1575C125.879 41.1222 125.501 40.3241 124.807 39.7633C124.111 39.181 123.154 38.8897 121.934 38.8897C120.734 38.8897 119.788 39.181 119.093 39.7633C118.398 40.3457 118.02 41.1438 117.956 42.1575H125.943Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                d="M131.515 35.8161H136.122V37.725C136.818 36.927 137.638 36.3338 138.585 35.9455C139.553 35.5357 140.563 35.3308 141.615 35.3308C143.678 35.3308 145.214 35.9024 146.223 37.0456C147.255 38.1672 147.771 39.6878 147.771 41.6075V51.3462H143.004V42.1575C143.004 40.1516 142.099 39.1486 140.289 39.1486C139.49 39.1486 138.743 39.3535 138.048 39.7633C137.354 40.1516 136.765 40.734 136.28 41.5104V51.3462H131.515V35.8161Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                d="M151.975 33.4219C151.239 33.4219 150.619 33.1739 150.114 32.6777C149.608 32.1817 149.356 31.5561 149.356 30.8012C149.356 30.0679 149.608 29.4531 150.114 28.957C150.619 28.4394 151.239 28.1805 151.975 28.1805C152.712 28.1805 153.333 28.4394 153.838 28.957C154.343 29.4531 154.596 30.0679 154.596 30.8012C154.596 31.5561 154.343 32.1817 153.838 32.6777C153.333 33.1739 152.712 33.4219 151.975 33.4219ZM149.577 35.8161H154.375V51.3462H149.577V35.8161Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                d="M162.504 51.8316C161.368 51.8316 160.147 51.7018 158.842 51.4431C157.559 51.2059 156.549 50.8608 155.812 50.4079V46.5901C156.654 47.1077 157.664 47.5283 158.842 47.8518C160.021 48.1752 161.115 48.337 162.125 48.337C162.988 48.337 163.619 48.2616 164.019 48.1108C164.418 47.9597 164.618 47.6793 164.618 47.2695C164.618 46.946 164.503 46.6871 164.271 46.493C164.04 46.2773 163.682 46.0939 163.198 45.943C162.735 45.7704 161.956 45.5224 160.862 45.1988C159.579 44.8106 158.568 44.4223 157.832 44.0341C157.117 43.6242 156.57 43.1174 156.191 42.5134C155.833 41.9095 155.654 41.1329 155.654 40.1839C155.654 38.5662 156.274 37.3583 157.517 36.5603C158.779 35.7406 160.483 35.3308 162.63 35.3308C163.682 35.3308 164.766 35.4494 165.881 35.6867C167.017 35.9024 167.891 36.1936 168.501 36.5603V40.281C167.891 39.8712 167.091 39.5368 166.102 39.278C165.134 39.0192 164.187 38.8897 163.261 38.8897C162.398 38.8897 161.725 38.976 161.241 39.1486C160.778 39.3212 160.546 39.6447 160.546 40.1192C160.546 40.529 160.767 40.8418 161.209 41.0575C161.672 41.2732 162.525 41.5428 163.766 41.8664L164.398 42.0281C165.723 42.3948 166.754 42.8046 167.491 43.2576C168.227 43.689 168.743 44.2174 169.038 44.8429C169.353 45.4469 169.511 46.2126 169.511 47.1401C169.511 48.5637 168.911 49.7068 167.712 50.5697C166.513 51.4107 164.776 51.8316 162.504 51.8316Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                d="M170.613 27.4364H175.379V37.5956C176.095 36.8407 176.905 36.2799 177.809 35.9132C178.715 35.5249 179.683 35.3308 180.714 35.3308C182.776 35.3308 184.312 35.9024 185.322 37.0456C186.353 38.1672 186.869 39.6878 186.869 41.6076V51.3463H182.103V42.1576C182.103 40.1516 181.198 39.1486 179.388 39.1486C178.588 39.1486 177.842 39.3535 177.147 39.7633C176.452 40.1516 175.863 40.734 175.379 41.5104V51.3463H170.613V27.4364Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M47.6772 32.0142C47.6772 36.124 44.4271 39.4556 40.4175 39.4556C36.4079 39.4556 33.1575 36.124 33.1575 32.0142C33.1575 27.9044 36.4079 24.5728 40.4175 24.5728C44.4271 24.5728 47.6772 27.9044 47.6772 32.0142ZM23.5302 38.9148C31.4398 38.3683 38.3332 44.4383 38.9753 52.5628C39.0418 53.4045 39.0386 54.2356 38.9707 55.0504C31.0611 55.5969 24.1677 49.5268 23.5256 41.4024C23.4591 40.5606 23.4623 39.7293 23.5302 38.9148ZM44.0883 54.7659C52.0146 54.1075 57.9363 47.042 57.4034 38.9348C56.6085 38.8651 55.7979 38.8618 54.9763 38.93C47.05 39.5882 41.1282 46.6539 41.6614 54.7611C42.4561 54.831 43.2669 54.8341 44.0883 54.7659Z"
+                                fill="#81818B"
+                            />
+                        </svg>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="183"
+                            height="65"
+                            viewBox="0 0 183 65"
+                            fill="none"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M29.5953 31.2361C32.3357 27.7339 36.7239 25.4649 41.6698 25.4649C46.6448 25.4649 51.0553 27.7606 53.7924 31.298C53.6759 31.4118 53.5698 31.5298 53.4737 31.6476C52.9724 32.2645 52.5951 33.059 52.293 33.8659C51.6844 35.4887 51.2202 37.6085 50.7904 39.5935L50.7522 39.7719C50.3234 41.7533 49.9248 43.5959 49.4428 44.9638C49.2263 45.5783 49.021 46.0128 48.8389 46.291C48.6489 46.0105 48.4334 45.5708 48.2052 44.9475C47.6898 43.5403 47.2562 41.6263 46.7967 39.5827L46.7818 39.5157V39.5157C46.3401 37.5527 45.8717 35.4699 45.2876 33.8756C44.9941 33.0747 44.6341 32.2881 44.1632 31.6769C43.701 31.0772 42.9317 30.4003 41.8065 30.4003C40.6884 30.4003 39.9156 31.0698 39.4467 31.6629C38.9667 32.2701 38.5924 33.0534 38.2842 33.8547C37.6633 35.4682 37.1557 37.5789 36.6833 39.5666L36.6346 39.7719C36.1668 41.7409 35.7295 43.5818 35.2331 44.9523C35.0437 45.4757 34.8648 45.8739 34.703 46.1583C34.5448 45.8752 34.3704 45.4797 34.1861 44.9607C33.7099 43.6194 33.2928 41.8301 32.8447 39.9083L32.7663 39.5719C32.3021 37.583 31.7985 35.4685 31.1688 33.85C30.8559 33.0457 30.4733 32.2584 29.9781 31.6484C29.8659 31.5103 29.7385 31.3701 29.5953 31.2361ZM27.9368 33.9253C28.0673 34.1701 28.2054 34.4736 28.3481 34.8406C28.8932 36.2416 29.3549 38.1533 29.8304 40.1905L29.923 40.5875C30.3559 42.4464 30.8062 44.38 31.3367 45.8739C31.6188 46.6684 31.9595 47.4466 32.3977 48.0514C32.8121 48.6235 33.5555 49.3623 34.6986 49.3623C35.8383 49.3623 36.5835 48.627 37.0007 48.0576C37.4426 47.4542 37.7889 46.6769 38.0767 45.8818C38.6285 44.3584 39.0983 42.3794 39.5479 40.4855V40.4854L39.6167 40.1959C40.1011 38.1574 40.5675 36.2419 41.1086 34.8358C41.3592 34.1843 41.5939 33.7305 41.7981 33.449C41.9918 33.7281 42.213 34.1747 42.4476 34.815C42.9631 36.2222 43.3962 38.1361 43.8559 40.1798L43.871 40.2467C44.3125 42.2098 44.7809 44.2926 45.365 45.8867C45.6585 46.6879 46.0185 47.4745 46.4894 48.0855C46.9517 48.6854 47.7209 49.3623 48.8459 49.3623C49.9769 49.3623 50.7434 48.6792 51.2001 48.074C51.6639 47.4599 52.0127 46.6707 52.2944 45.8708C52.8359 44.3344 53.2664 42.3408 53.6769 40.4444V40.4443L53.7357 40.169C54.1778 38.1278 54.6019 36.2214 55.1259 34.8246C55.2393 34.5208 55.3511 34.2617 55.4577 34.0441C56.2604 35.7921 56.7056 37.7223 56.7056 39.7513C56.7056 47.6413 49.9741 54.0377 41.6698 54.0377C33.3656 54.0377 26.6338 47.6413 26.6338 39.7513C26.6338 37.6762 27.0994 35.7044 27.9368 33.9253ZM41.6698 22.6077C31.7048 22.6077 23.6266 30.2831 23.6266 39.7513C23.6266 49.2194 31.7048 56.8948 41.6698 56.8948C51.635 56.8948 59.7128 49.2194 59.7128 39.7513C59.7128 30.2831 51.635 22.6077 41.6698 22.6077ZM42.0136 33.2098C42.0136 33.2101 42.01 33.2128 42.003 33.2167C42.01 33.2114 42.0136 33.2095 42.0136 33.2098ZM41.5979 33.2117C41.5909 33.2077 41.5875 33.2049 41.5875 33.2045C41.5875 33.2042 41.591 33.2062 41.5979 33.2117ZM48.6173 46.5623C48.6173 46.5623 48.6205 46.5592 48.627 46.5552C48.6205 46.5605 48.6173 46.5627 48.6173 46.5623ZM49.0545 46.5508C49.0615 46.5548 49.0652 46.5574 49.0652 46.5579C49.0652 46.5583 49.0615 46.5561 49.0545 46.5508ZM34.3904 46.5879C34.3903 46.5875 34.3947 46.5835 34.4034 46.5778C34.3948 46.5853 34.3904 46.5884 34.3904 46.5879ZM34.9994 46.5804C35.008 46.5862 35.0123 46.5901 35.0123 46.5906C35.0123 46.591 35.0079 46.5884 34.9994 46.5804Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                d="M69.6758 49.9007L65.3004 35.6801H69.1329L71.728 45.9154L74.7452 35.6801H79.0302L82.0479 45.9154L84.6729 35.6801H88.5054L84.0996 49.9007H80.0865L76.8877 39.2639L73.6894 49.9007H69.6758Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                d="M94.1287 50.2449C92.8414 50.2449 91.7851 50.0533 90.9604 49.6711C90.1361 49.2698 89.5224 48.7442 89.1197 48.0943C88.7176 47.4444 88.5165 46.7277 88.5165 45.9442C88.5165 44.6254 89.0593 43.5549 90.1456 42.733C91.2318 41.9112 92.8619 41.5002 95.0344 41.5002H98.8364V41.1562C98.8364 40.1813 98.5445 39.4646 97.9612 39.0059C97.378 38.5471 96.6535 38.3178 95.7888 38.3178C95.0039 38.3178 94.3198 38.4993 93.7366 38.8625C93.1533 39.2066 92.791 39.7226 92.6503 40.4107H88.8782C88.979 39.3786 89.3413 38.4802 89.9644 37.7157C90.6086 36.9512 91.4334 36.3682 92.4388 35.9668C93.4452 35.5463 94.5713 35.3361 95.8187 35.3361C97.9513 35.3361 99.6307 35.8425 100.858 36.8556C102.085 37.8686 102.699 39.3022 102.699 41.1562V49.9007H99.4092L99.0475 47.6072C98.6049 48.3717 97.9812 49.0022 97.1769 49.4995C96.392 49.9963 95.3761 50.2449 94.1287 50.2449ZM95.0039 47.3776C96.1106 47.3776 96.9653 47.0334 97.5685 46.3455C98.1922 45.6575 98.5849 44.8067 98.7461 43.7938H95.4565C94.4306 43.7938 93.6967 43.9754 93.2536 44.3386C92.8115 44.6824 92.59 45.1129 92.59 45.6287C92.59 46.1831 92.8115 46.6131 93.2536 46.9188C93.6967 47.2245 94.2794 47.3776 95.0039 47.3776Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                d="M108.779 49.9007L103.287 35.6801H107.33L111.132 46.4317L114.934 35.6801H118.978L113.456 49.9007H108.779Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                d="M126.742 50.2449C125.234 50.2449 123.896 49.9388 122.729 49.3273C121.563 48.7155 120.647 47.8554 119.983 46.7467C119.319 45.6385 118.988 44.3577 118.988 42.905C118.988 41.4333 119.31 40.124 119.953 38.9772C120.617 37.8304 121.522 36.9416 122.669 36.3108C123.835 35.661 125.203 35.3361 126.773 35.3361C128.241 35.3361 129.539 35.6419 130.665 36.2535C131.792 36.8651 132.667 37.7061 133.29 38.7765C133.934 39.8277 134.256 41.0032 134.256 42.303C134.256 42.5132 134.246 42.733 134.226 42.9624C134.226 43.1918 134.216 43.4307 134.196 43.6791H122.82C122.9 44.7877 123.303 45.6575 124.027 46.2884C124.771 46.9188 125.666 47.2343 126.713 47.2343C127.497 47.2343 128.151 47.0719 128.674 46.7467C129.216 46.403 129.619 45.9632 129.881 45.4279H133.803C133.522 46.3264 133.049 47.1485 132.385 47.8939C131.741 48.6199 130.937 49.1933 129.971 49.614C129.026 50.0343 127.949 50.2449 126.742 50.2449ZM126.773 38.3178C125.828 38.3178 124.992 38.5758 124.268 39.0919C123.544 39.5888 123.081 40.3534 122.88 41.3855H130.333C130.273 40.4489 129.911 39.7035 129.247 39.1492C128.583 38.5949 127.759 38.3178 126.773 38.3178Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                d="M136.298 49.9007V29.2578H140.16V49.9007H136.298Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                d="M150.171 50.2449C148.663 50.2449 147.325 49.9388 146.158 49.3273C144.992 48.7155 144.077 47.8554 143.413 46.7467C142.748 45.6385 142.417 44.3577 142.417 42.905C142.417 41.4333 142.739 40.124 143.382 38.9772C144.046 37.8304 144.951 36.9416 146.098 36.3108C147.265 35.661 148.633 35.3361 150.202 35.3361C151.67 35.3361 152.968 35.6419 154.095 36.2535C155.221 36.8651 156.097 37.7061 156.72 38.7765C157.363 39.8277 157.686 41.0032 157.686 42.303C157.686 42.5132 157.675 42.733 157.655 42.9624C157.655 43.1918 157.645 43.4307 157.625 43.6791H146.249C146.329 44.7877 146.732 45.6575 147.456 46.2884C148.2 46.9188 149.096 47.2343 150.142 47.2343C150.926 47.2343 151.58 47.0719 152.103 46.7467C152.646 46.403 153.048 45.9632 153.31 45.4279H157.233C156.951 46.3264 156.478 47.1485 155.815 47.8939C155.17 48.6199 154.366 49.1933 153.4 49.614C152.455 50.0343 151.379 50.2449 150.171 50.2449ZM150.202 38.3178C149.257 38.3178 148.422 38.5758 147.697 39.0919C146.973 39.5888 146.511 40.3534 146.309 41.3855H153.762C153.702 40.4489 153.34 39.7035 152.676 39.1492C152.012 38.5949 151.188 38.3178 150.202 38.3178Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                d="M165.913 50.2449C164.585 50.2449 163.418 50.044 162.413 49.6428C161.406 49.222 160.602 48.6487 159.998 47.9222C159.395 47.1962 159.033 46.3552 158.912 45.3996H162.804C162.925 45.9535 163.248 46.4317 163.77 46.833C164.313 47.2152 165.007 47.4064 165.852 47.4064C166.697 47.4064 167.311 47.244 167.693 46.9188C168.095 46.5941 168.296 46.2212 168.296 45.8008C168.296 45.189 168.015 44.778 167.452 44.5678C166.888 44.3386 166.104 44.1188 165.098 43.9085C164.455 43.7747 163.801 43.6123 163.137 43.4211C162.473 43.23 161.859 42.991 161.296 42.7044C160.753 42.3985 160.31 42.0163 159.968 41.5575C159.626 41.0797 159.455 40.4967 159.455 39.8086C159.455 38.5471 159.978 37.4864 161.025 36.6262C162.09 35.7661 163.579 35.3361 165.49 35.3361C167.261 35.3361 168.669 35.7279 169.715 36.5115C170.781 37.2952 171.414 38.3751 171.616 39.7513H167.965C167.743 38.7001 166.908 38.1744 165.46 38.1744C164.736 38.1744 164.173 38.3082 163.77 38.5758C163.388 38.8434 163.197 39.1779 163.197 39.5793C163.197 39.9998 163.489 40.3343 164.072 40.5828C164.656 40.8312 165.43 41.0606 166.395 41.2709C167.441 41.5002 168.397 41.7582 169.262 42.0449C170.147 42.3125 170.851 42.7235 171.375 43.2778C171.897 43.8129 172.159 44.5869 172.159 45.6C172.179 46.4795 171.937 47.2723 171.435 47.9797C170.932 48.6867 170.208 49.2411 169.262 49.6428C168.317 50.044 167.2 50.2449 165.913 50.2449Z"
+                                fill="#81818B"
+                            />
+                            <path
+                                d="M180.559 50.2449C179.232 50.2449 178.065 50.044 177.059 49.6428C176.053 49.222 175.249 48.6487 174.645 47.9222C174.042 47.1962 173.679 46.3552 173.559 45.3996H177.451C177.572 45.9535 177.894 46.4317 178.417 46.833C178.96 47.2152 179.654 47.4064 180.499 47.4064C181.344 47.4064 181.958 47.244 182.34 46.9188C182.742 46.5941 182.943 46.2212 182.943 45.8008C182.943 45.189 182.662 44.778 182.098 44.5678C181.535 44.3386 180.751 44.1188 179.745 43.9085C179.101 43.7747 178.447 43.6123 177.783 43.4211C177.12 43.23 176.506 42.991 175.943 42.7044C175.4 42.3985 174.957 42.0163 174.615 41.5575C174.273 41.0797 174.102 40.4967 174.102 39.8086C174.102 38.5471 174.625 37.4864 175.671 36.6262C176.737 35.7661 178.226 35.3361 180.137 35.3361C181.907 35.3361 183.315 35.7279 184.361 36.5115C185.427 37.2952 186.061 38.3751 186.263 39.7513H182.611C182.39 38.7001 181.555 38.1744 180.107 38.1744C179.382 38.1744 178.819 38.3082 178.417 38.5758C178.035 38.8434 177.844 39.1779 177.844 39.5793C177.844 39.9998 178.135 40.3343 178.719 40.5828C179.302 40.8312 180.076 41.0606 181.042 41.2709C182.088 41.5002 183.044 41.7582 183.909 42.0449C184.794 42.3125 185.498 42.7235 186.021 43.2778C186.544 43.8129 186.806 44.5869 186.806 45.6C186.826 46.4795 186.584 47.2723 186.081 47.9797C185.578 48.6867 184.854 49.2411 183.909 49.6428C182.963 50.044 181.847 50.2449 180.559 50.2449Z"
+                                fill="#81818B"
+                            />
+                        </svg>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div
+                    class="mx-auto flex justify-between items-center sm:py-5 py-8 px-3 max-w-[1280px] mt-[160px] sm:mt-[90px] gap-[100px] lg:flex-wrap lg:justify-center"
+                >
+                    <div class="flex flex-col w-[40%] lg:w-[100%]">
+                        <h2
+                            class="font-light text-[10.8px] tracking-[2px] leading-[17.3px] uppercase py-[11px] px-[19px] border rounded-xl w-[102px]"
+                        >
+                            Services
+                        </h2>
+                        <h3
+                            class="text-[51.2px] font-medium leading-[61px] sm:text-[40px] mt-[19px] mb-[12px]"
+                        >
+                            Services we offer
+                        </h3>
+                        <p
+                            class="text-[#9c9c9c] text-lg font-light mt-7 sm:text-base"
+                        >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, suspendisse varius enim in eros elementum
+                            tristique. Duis cursus, mi quis viverra ornare, eros
+                            dolor.
+                        </p>
+                        <button
+                            class="w-[170px] mt-[33px] hover:opacity-90 text-[14px] font-medium leading-[22px] tracking-[2px] py-[16px] px-[29px] bg-[#3D96F4] rounded-[50px]"
+                        >
+                            All services
+                        </button>
+                    </div>
+                    <div
+                        class="flex w-[665px] gap-8 lg:w-[100%] lg:justify-center sm:flex-wrap"
+                    >
+                        <div class="flex flex-col gap-8 mt-12 lg:mt-0">
+                            <div
+                                class="bg-[#81818b1a] rounded-[30px] py-[55px] px-[25px] max-w-[315px] sm:max-w-[100%]"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="77"
+                                    height="76"
+                                    viewBox="0 0 77 76"
+                                    fill="none"
+                                >
+                                    <g clip-path="url(#clip0_1_230)">
+                                        <path
+                                            opacity="0.06"
+                                            d="M55.4036 0.265625H21.6277C10.08 0.265625 0.71875 9.62687 0.71875 21.1745V54.9505C0.71875 66.4981 10.08 75.8594 21.6277 75.8594H55.4036C66.9513 75.8594 76.3125 66.4981 76.3125 54.9505V21.1745C76.3125 9.62687 66.9513 0.265625 55.4036 0.265625Z"
+                                            fill="#0089FF"
+                                        />
+                                        <path
+                                            d="M38.5157 63.8029C52.7318 63.8029 64.2561 52.2786 64.2561 38.0625C64.2561 23.8465 52.7318 12.3221 38.5157 12.3221C24.2997 12.3221 12.7753 23.8465 12.7753 38.0625C12.7753 52.2786 24.2997 63.8029 38.5157 63.8029Z"
+                                            fill="#1B76FF"
+                                        />
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M25.1058 32.9688H29.7516V51.1299H25.1058C24.4063 51.1299 23.8392 50.5898 23.8392 49.9236V34.175C23.8392 33.5088 24.4063 32.9688 25.1058 32.9688Z"
+                                            stroke="white"
+                                            stroke-width="1.60838"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M51.7796 47.7297C51.4855 49.9931 49.9732 51.1299 47.2848 51.1299H33.2172C31.3058 51.1299 29.7516 49.667 29.7516 47.8681V32.9905C34.2128 32.5556 36.4434 30.9982 36.4434 26.8104V24.8035C36.4434 22.6883 38.2439 20.9735 40.4649 20.9735C41.3113 20.9735 42.1361 21.2278 42.8219 21.7003C43.7671 22.3526 44.3693 23.5882 44.3693 25.3673V31.1765C44.3693 31.6707 45.2058 32.0759 46.0424 32.0759H50.5298C52.4202 32.0759 53.9535 33.4992 53.9955 35.2685C54.0235 36.448 53.2849 40.0991 51.7796 47.7297Z"
+                                            stroke="white"
+                                            stroke-width="1.60838"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1_230">
+                                            <rect
+                                                width="75.5938"
+                                                height="75.5938"
+                                                fill="white"
+                                                transform="translate(0.71875 0.265625)"
+                                            />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <h4
+                                    class="text-[19px] font-normal leading-[27px] mt-[15px] mb-[10px]"
+                                >
+                                    Social Media Marketing
+                                </h4>
+                                <p
+                                    class="text-[#81818b] text-base font-light leading-6"
+                                >
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit lobortis arcu enim urna
+                                    adipiscing praesent velit.
+                                </p>
+                            </div>
+                            <div
+                                class="bg-[#81818b1a] rounded-[30px] py-[55px] px-[25px] max-w-[315px] sm:max-w-[100%]"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="76"
+                                    height="76"
+                                    viewBox="0 0 76 76"
+                                    fill="none"
+                                >
+                                    <g clip-path="url(#clip0_5_20)">
+                                        <path
+                                            opacity="0.06"
+                                            d="M54.9787 0H21.0213C9.41155 0 0 9.41155 0 21.0213V54.9787C0 66.5885 9.41155 76 21.0213 76H54.9787C66.5885 76 76 66.5885 76 54.9787V21.0213C76 9.41155 66.5885 0 54.9787 0Z"
+                                            fill="#F6CA4F"
+                                        />
+                                        <path
+                                            d="M38.0001 63.8788C52.2925 63.8788 63.8788 52.2925 63.8788 38.0001C63.8788 23.7076 52.2925 12.1213 38.0001 12.1213C23.7076 12.1213 12.1213 23.7076 12.1213 38.0001C12.1213 52.2925 23.7076 63.8788 38.0001 63.8788Z"
+                                            fill="#FF6D35"
+                                        />
+                                        <path
+                                            d="M47.5505 49.6729H28.4495C26.1149 49.6729 24.2048 47.7628 24.2048 45.4282V30.5718C24.2048 28.2373 26.1149 26.3271 28.4495 26.3271H47.5505C49.8851 26.3271 51.7952 28.2373 51.7952 30.5718V45.4282C51.7952 47.7628 49.8851 49.6729 47.5505 49.6729Z"
+                                            stroke="white"
+                                            stroke-width="2"
+                                            stroke-miterlimit="10"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                        <path
+                                            d="M24.2048 31.6329L38 40.1223L51.7952 31.6329"
+                                            stroke="white"
+                                            stroke-width="2"
+                                            stroke-miterlimit="10"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_5_20">
+                                            <rect
+                                                width="76"
+                                                height="76"
+                                                fill="white"
+                                            />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <h4
+                                    class="text-[19px] font-normal leading-[27px] mt-[15px] mb-[10px]"
+                                >
+                                    Email Marketing
+                                </h4>
+                                <p
+                                    class="text-[#81818b] text-base font-light leading-6"
+                                >
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit lobortis arcu enim urna
+                                    adipiscing praesent velit.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-8">
+                            <div
+                                class="bg-[#81818b1a] rounded-[30px] py-[55px] px-[25px] max-w-[315px] sm:max-w-[100%]"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="76"
+                                    height="76"
+                                    viewBox="0 0 76 76"
+                                    fill="none"
+                                >
+                                    <g clip-path="url(#clip0_1_243)">
+                                        <path
+                                            opacity="0.06"
+                                            d="M55.0286 0.265625H21.2527C9.70499 0.265625 0.34375 9.62687 0.34375 21.1745V54.9505C0.34375 66.4981 9.70499 75.8594 21.2527 75.8594H55.0286C66.5763 75.8594 75.9375 66.4981 75.9375 54.9505V21.1745C75.9375 9.62687 66.5763 0.265625 55.0286 0.265625Z"
+                                            fill="#FF6F35"
+                                        />
+                                        <path
+                                            d="M38.1407 63.8029C52.3567 63.8029 63.8811 52.2786 63.8811 38.0625C63.8811 23.8465 52.3567 12.3221 38.1407 12.3221C23.9246 12.3221 12.4003 23.8465 12.4003 38.0625C12.4003 52.2786 23.9246 63.8029 38.1407 63.8029Z"
+                                            fill="#FFCD1D"
+                                        />
+                                        <path
+                                            d="M38.1406 21.8447V54.2804"
+                                            stroke="white"
+                                            stroke-width="2.41257"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                        <path
+                                            d="M45.5124 27.7421H34.4548C33.0862 27.7421 31.7737 28.2857 30.8059 29.2535C29.8382 30.2211 29.2946 31.5337 29.2946 32.9022C29.2946 34.2708 29.8382 35.5833 30.8059 36.5511C31.7737 37.5188 33.0862 38.0625 34.4548 38.0625H41.8265C43.195 38.0625 44.5076 38.6061 45.4753 39.5739C46.4431 40.5415 46.9867 41.8541 46.9867 43.2227C46.9867 44.5913 46.4431 45.9038 45.4753 46.8715C44.5076 47.8392 43.195 48.3829 41.8265 48.3829H29.2946"
+                                            stroke="white"
+                                            stroke-width="2.41257"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1_243">
+                                            <rect
+                                                width="75.5938"
+                                                height="75.5938"
+                                                fill="white"
+                                                transform="translate(0.34375 0.265625)"
+                                            />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <h4
+                                    class="text-[19px] font-normal leading-[27px] mt-[15px] mb-[10px]"
+                                >
+                                    Paid Advertising
+                                </h4>
+                                <p
+                                    class="text-[#81818b] text-base font-light leading-6"
+                                >
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit lobortis arcu enim urna
+                                    adipiscing praesent velit.
+                                </p>
+                            </div>
+                            <div
+                                class="bg-[#81818b1a] rounded-[30px] py-[55px] px-[25px] max-w-[315px] sm:max-w-[100%]"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="76"
+                                    height="77"
+                                    viewBox="0 0 76 77"
+                                    fill="none"
+                                >
+                                    <g clip-path="url(#clip0_1_255)">
+                                        <path
+                                            opacity="0.06"
+                                            d="M55.0286 0.859375H21.2527C9.70499 0.859375 0.34375 10.2206 0.34375 21.7683V55.5442C0.34375 67.0919 9.70499 76.4531 21.2527 76.4531H55.0286C66.5763 76.4531 75.9375 67.0919 75.9375 55.5442V21.7683C75.9375 10.2206 66.5763 0.859375 55.0286 0.859375Z"
+                                            fill="#5CC97B"
+                                        />
+                                        <path
+                                            d="M38.1407 64.3967C52.3567 64.3967 63.8811 52.8723 63.8811 38.6563C63.8811 24.4402 52.3567 12.9159 38.1407 12.9159C23.9246 12.9159 12.4003 24.4402 12.4003 38.6563C12.4003 52.8723 23.9246 64.3967 38.1407 64.3967Z"
+                                            fill="#5CC97B"
+                                        />
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M40.8977 45.0292C39.0546 46.2479 36.8249 46.9189 34.4491 46.8208C28.44 46.5726 23.7696 41.4995 24.0178 35.4901C24.2659 29.4807 29.3387 24.8111 35.3479 25.0593C41.3561 25.3073 46.0275 30.3794 45.7793 36.3889C45.6918 38.5072 45.0047 40.4592 43.8885 42.088L51.2251 49.2115C52.1303 50.1929 52.0979 51.7099 51.1678 52.6499L51.125 52.6893L51.0798 52.7284C50.0689 53.5779 48.5543 53.4868 47.65 52.5046L40.8977 45.0292ZM34.5529 44.309C29.9306 44.1181 26.3378 40.2157 26.5287 35.5935C26.7197 30.9713 30.622 27.3785 35.2442 27.5694C39.8665 27.7603 43.4593 31.6626 43.2684 36.2848C43.0775 40.9071 39.1751 44.4999 34.5529 44.309Z"
+                                            fill="white"
+                                        />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1_255">
+                                            <rect
+                                                width="75.5938"
+                                                height="75.5938"
+                                                fill="white"
+                                                transform="translate(0.34375 0.859375)"
+                                            />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <h4
+                                    class="text-[19px] font-normal leading-[27px] mt-[15px] mb-[10px]"
+                                >
+                                    SEO Optimization
+                                </h4>
+                                <p
+                                    class="text-[#81818b] text-base font-light leading-6"
+                                >
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit lobortis arcu enim urna
+                                    adipiscing praesent velit.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div
+                    class="mx-auto flex justify-between items-center px-3 max-w-[1280px] gap-10 lg:flex-wrap mt-[192px] lg:mt-[100px]"
+                >
+                    <div class="flex lg:w-[100%] lg:justify-around">
+                        <div class="max-w-[605px] relative">
+                            <img
+                                class="relative z-10"
+                                src="img/11.png"
+                                alt="img"
+                            />
+                            <svg
+                                class="absolute z-0 bottom-0 left-0"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="123"
+                                height="123"
+                                viewBox="0 0 123 123"
+                                fill="none"
+                            >
+                                <rect
+                                    x="0.3125"
+                                    y="0.046875"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="16.3125"
+                                    y="0.046875"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="32.3125"
+                                    y="0.046875"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="48.3125"
+                                    y="0.046875"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="64.3125"
+                                    y="0.046875"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="80.3125"
+                                    y="0.046875"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="96.3125"
+                                    y="0.046875"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="112.312"
+                                    y="0.046875"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="0.3125"
+                                    y="16.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="16.3125"
+                                    y="16.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="32.3125"
+                                    y="16.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="48.3125"
+                                    y="16.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="64.3125"
+                                    y="16.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="80.3125"
+                                    y="16.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="96.3125"
+                                    y="16.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="112.312"
+                                    y="16.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="0.3125"
+                                    y="32.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="16.3125"
+                                    y="32.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="32.3125"
+                                    y="32.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="48.3125"
+                                    y="32.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="64.3125"
+                                    y="32.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="80.3125"
+                                    y="32.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="96.3125"
+                                    y="32.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="112.312"
+                                    y="32.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="0.3125"
+                                    y="48.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="16.3125"
+                                    y="48.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="32.3125"
+                                    y="48.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="48.3125"
+                                    y="48.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="64.3125"
+                                    y="48.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="80.3125"
+                                    y="48.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="96.3125"
+                                    y="48.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="112.312"
+                                    y="48.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="0.3125"
+                                    y="64.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="16.3125"
+                                    y="64.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="32.3125"
+                                    y="64.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="48.3125"
+                                    y="64.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="64.3125"
+                                    y="64.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="80.3125"
+                                    y="64.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="96.3125"
+                                    y="64.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="112.312"
+                                    y="64.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="0.3125"
+                                    y="80.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="16.3125"
+                                    y="80.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="32.3125"
+                                    y="80.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="48.3125"
+                                    y="80.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="64.3125"
+                                    y="80.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="80.3125"
+                                    y="80.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="96.3125"
+                                    y="80.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="112.312"
+                                    y="80.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="0.3125"
+                                    y="96.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="16.3125"
+                                    y="96.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="32.3125"
+                                    y="96.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="48.3125"
+                                    y="96.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="64.3125"
+                                    y="96.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="80.3125"
+                                    y="96.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="96.3125"
+                                    y="96.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="112.312"
+                                    y="96.0469"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="0.3125"
+                                    y="112.047"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="16.3125"
+                                    y="112.047"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="32.3125"
+                                    y="112.047"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="48.3125"
+                                    y="112.047"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="64.3125"
+                                    y="112.047"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="80.3125"
+                                    y="112.047"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="96.3125"
+                                    y="112.047"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                                <rect
+                                    x="112.312"
+                                    y="112.047"
+                                    width="10"
+                                    height="10"
+                                    rx="5"
+                                    fill="#81818B"
+                                    fill-opacity="0.2"
+                                />
+                            </svg>
+                        </div>
+                        <div class="max-w-[180px] self-end">
+                            <img src="img/12.png" alt="img" />
+                        </div>
+                    </div>
+
+                    <div class="max-w-[43%] lg:max-w-[100%] lg:mt-12">
+                        <h2
+                            class="font-light text-[10.8px] tracking-[2px] leading-[17.3px] uppercase py-[11px] px-[19px] border rounded-xl inline-block"
+                        >
+                            Why choose us
+                        </h2>
+                        <h3
+                            class="text-[51.2px] font-medium leading-[61px] sm:text-[40px] mt-[43px]"
+                        >
+                            We help great brands scale with content marketing.
+                        </h3>
+                        <p
+                            class="text-[#9C9C9C] text-lg font-light leading-[27px] mt-[40px]"
+                        >
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, suspendisse varius enim in eros elementum
+                            tristique. Duis cursus, mi quis viverra ornare, eros
+                            dolor.
+                        </p>
+                        <ul
+                            class="text-[#9C9C9C] text-base font-light leading-[24px] flex flex-col gap-4 mt-[35px]"
+                        >
+                            <li
+                                class="before:content-[''] before:w-[32px] before:h-[32px] before:inline-block before:bg-[url('/img/div.png')] flex items-center before:mr-3"
+                            >
+                                This is some text inside of a div.
+                            </li>
+                            <li
+                                class="before:content-[''] before:w-[32px] before:h-[32px] before:inline-block before:bg-[url('/img/div.png')] flex items-center before:mr-3"
+                            >
+                                This is some text inside of a div.
+                            </li>
+                            <li
+                                class="before:content-[''] before:w-[32px] before:h-[32px] before:inline-block before:bg-[url('/img/div.png')] flex items-center before:mr-3"
+                            >
+                                This is some text inside of a div.
+                            </li>
+                            <li
+                                class="before:content-[''] before:w-[32px] before:h-[32px] before:inline-block before:bg-[url('/img/div.png')] flex items-center before:mr-3"
+                            >
+                                This is some text inside of a div.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div
+                    class="mx-auto flex justify-between items-center px-3 max-w-[1280px] mt-[190px] lg:mt-[100px] flex-wrap-reverse lg:justify-center"
+                >
+                    <div
+                        class="flex max-w-[60%] gap-8 flex-wrap lg:max-w-[100%] lg:justify-center"
+                    >
+                        <div
+                            class="flex gap-8 lg:justify-center mt-8 sm:flex-wrap"
+                        >
+                            <div
+                                class="bg-[#81818b1a] rounded-[30px] py-[55px] px-[25px] w-[45%] sm:w-[100%]"
+                            >
+                                <h4
+                                    class="text-[51px] font-medium leading-[61px]"
+                                >
+                                    1.2M+
+                                </h4>
+
+                                <p
+                                    class="text-[#9c9c9c] text-[18px] font-light leading-[27px]"
+                                >
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Suspendisse varius enim.
+                                </p>
+                            </div>
+                            <div
+                                class="bg-[#81818b1a] rounded-[30px] py-[55px] px-[25px] w-[45%] sm:w-[100%]"
+                            >
+                                <h4
+                                    class="text-[51px] font-medium leading-[61px]"
+                                >
+                                    3.4B
+                                </h4>
+
+                                <p
+                                    class="text-[#9c9c9c] text-[18px] font-light leading-[27px]"
+                                >
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Suspendisse varius enim.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex gap-8 lg:justify-center sm:flex-wrap">
+                            <div
+                                class="bg-[#81818b1a] rounded-[30px] py-[55px] px-[25px] w-[45%] sm:w-[100%]"
+                            >
+                                <h4
+                                    class="text-[51px] font-medium leading-[61px]"
+                                >
+                                    98%
+                                </h4>
+
+                                <p
+                                    class="text-[#9c9c9c] text-[18px] font-light leading-[27px]"
+                                >
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Suspendisse varius enim.
+                                </p>
+                            </div>
+                            <div
+                                class="bg-[#81818b1a] rounded-[30px] py-[55px] px-[25px] w-[45%] sm:w-[100%]"
+                            >
+                                <h4
+                                    class="text-[51px] font-medium leading-[61px]"
+                                >
+                                    10+
+                                </h4>
+
+                                <p
+                                    class="text-[#9c9c9c] text-[18px] font-light leading-[27px]"
+                                >
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Suspendisse varius enim.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-[36.5%] lg:w-[80%] lg:flex lg:justify-center">
+                        <img src="img/man.png" alt="img" />
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div
+                    class="mx-auto px-3 max-w-[1280px] mt-[190px] lg:mt-[100px]"
+                >
+                    <h2
+                        class="font-light text-[10.8px] tracking-[2px] leading-[17.3px] uppercase py-[11px] px-[19px] border rounded-xl inline-block"
+                    >
+                        testimonials
+                    </h2>
+                    <div class="flex justify-between mt-[19px] lg:flex-wrap">
+                        <div class="max-w-[60%] lg:max-w-[100%]">
+                            <h3
+                                class="text-[51.2px] font-medium leading-[61px] sm:text-[40px] mb-3"
+                            >
+                                See what our clients say
+                            </h3>
+                            <p
+                                class="text-[#9c9c9c] text-[18px] font-light leading-[27px]"
+                            >
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Suspendisse varius enim in eros
+                                elementum tristique. Duis cursus, mi quis
+                                viverra ornare, eros dolor interdum nulla, ut
+                                commodo diam libero.
+                            </p>
+                        </div>
+                        <button
+                            class="lg:mt-4 self-end hover:opacity-90 text-[14px] font-medium leading-[22px] tracking-[2px] py-[16px] px-[29px] bg-[#3D96F4] rounded-[50px]"
+                        >
+                            Get in touch
+                        </button>
+                    </div>
+
+                    <div
+                        class="flex justify-between mt-[75px] gap-12 lg:flex-wrap"
+                    >
+                        <div
+                            class="flex flex-col bg-[#81818b1a] rounded-[30px] py-[64px] px-[40px]"
+                        >
+                            <div class="flex gap-4">
+                                <img
+                                    class="inline-block"
+                                    src="img/divvv.png"
+                                    alt="ava"
+                                />
+                                <div class="flex flex-col justify-center">
+                                    <h5 class="text-base font-light leading-6">
+                                        Jonh Doe
+                                    </h5>
+                                    <p
+                                        class="text-sm font-light leading-[22px] text-[#9c9c9c]"
+                                    >
+                                        Company name
+                                    </p>
+                                </div>
+                            </div>
+                            <span
+                                class="py-8 text-[32px] font-normal leading-[45px] sm:text-[25px]"
+                                >"I recommend this agency"</span
+                            >
+
+                            <p
+                                class="text-base text-[#9c9c9c] font-light leading-6"
+                            >
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Suspendisse varius enim in eros
+                                elementum tristique. Duis cursus, mi quis
+                                viverra ornare, eros dolor interdum nulla, ut
+                                commodo diam libero.
+                            </p>
+                            <ul class="flex gap-[5px] mt-[35px]">
+                                <li><img src="img/star.svg" alt="star" /></li>
+                                <li><img src="img/star.svg" alt="star" /></li>
+                                <li><img src="img/star.svg" alt="star" /></li>
+                                <li><img src="img/star.svg" alt="star" /></li>
+                                <li><img src="img/star.svg" alt="star" /></li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="flex flex-col bg-[#81818b1a] rounded-[30px] py-[64px] px-[40px]"
+                        >
+                            <div class="flex gap-4">
+                                <img
+                                    class="inline-block"
+                                    src="img/div (1).png"
+                                    alt="ava"
+                                />
+                                <div class="flex flex-col justify-center">
+                                    <h5 class="text-base font-light leading-6">
+                                        Alice Smith
+                                    </h5>
+                                    <p
+                                        class="text-sm font-light leading-[22px] text-[#9c9c9c]"
+                                    >
+                                        Company name
+                                    </p>
+                                </div>
+                            </div>
+                            <span
+                                class="py-8 text-[32px] font-normal leading-[45px] sm:text-[25px]"
+                                >"The support is awesome"</span
+                            >
+
+                            <p
+                                class="text-base text-[#9c9c9c] font-light leading-6"
+                            >
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Suspendisse varius enim in eros
+                                elementum tristique. Duis cursus, mi quis
+                                viverra ornare, eros dolor interdum nulla, ut
+                                commodo diam libero.
+                            </p>
+                            <ul class="flex gap-[5px] mt-[35px]">
+                                <li><img src="img/star.svg" alt="star" /></li>
+                                <li><img src="img/star.svg" alt="star" /></li>
+                                <li><img src="img/star.svg" alt="star" /></li>
+                                <li><img src="img/star.svg" alt="star" /></li>
+                                <li><img src="img/star.svg" alt="star" /></li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="flex flex-col bg-[#81818b1a] rounded-[30px] py-[64px] px-[40px]"
+                        >
+                            <div class="flex gap-4">
+                                <img
+                                    class="inline-block"
+                                    src="img/div (2).png"
+                                    alt="ava"
+                                />
+                                <div class="flex flex-col justify-center">
+                                    <h5 class="text-base font-light leading-6">
+                                        Sophia Miller
+                                    </h5>
+                                    <p
+                                        class="text-sm font-light leading-[22px] text-[#9c9c9c]"
+                                    >
+                                        Company name
+                                    </p>
+                                </div>
+                            </div>
+                            <span
+                                class="py-8 text-[32px] font-normal leading-[45px] sm:text-[25px]"
+                                >"A game changer for us"</span
+                            >
+
+                            <p
+                                class="text-base text-[#9c9c9c] font-light leading-6"
+                            >
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Suspendisse varius enim in eros
+                                elementum tristique. Duis cursus, mi quis
+                                viverra ornare, eros dolor interdum nulla, ut
+                                commodo diam libero.
+                            </p>
+                            <ul class="flex gap-[5px] mt-[35px]">
+                                <li><img src="img/star.svg" alt="star" /></li>
+                                <li><img src="img/star.svg" alt="star" /></li>
+                                <li><img src="img/star.svg" alt="star" /></li>
+                                <li><img src="img/star.svg" alt="star" /></li>
+                                <li><img src="img/star.svg" alt="star" /></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div
+                    class="mx-auto px-3 max-w-[1280px] mt-[190px] lg:mt-[100px]"
+                >
+                    <h2
+                        class="font-light text-[10.8px] tracking-[2px] leading-[17.3px] uppercase py-[11px] px-[19px] border rounded-xl inline-block"
+                    >
+                        Blog
+                    </h2>
+                    <div class="flex justify-between mt-[19px] lg:flex-wrap">
+                        <div class="max-w-[60%] lg:max-w-[100%]">
+                            <h3
+                                class="text-[51.2px] font-medium leading-[61px] sm:text-[40px] mb-3"
+                            >
+                                Read our articles & news
+                            </h3>
+                            <p
+                                class="text-[#9c9c9c] text-[18px] font-light leading-[27px]"
+                            >
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Suspendisse varius enim in eros
+                                elementum tristique. Duis cursus, mi quis
+                                viverra ornare, eros dolor interdum nulla, ut
+                                commodo diam libero.
+                            </p>
+                        </div>
+                        <button
+                            class="lg:mt-4 self-end hover:opacity-90 text-[14px] font-medium leading-[22px] tracking-[2px] py-[16px] px-[29px] bg-[#3D96F4] rounded-[50px]"
+                        >
+                            All Posts
+                        </button>
+                    </div>
+
+                    <div
+                        class="flex justify-between mt-[75px] gap-12 lg:flex-wrap lg:justify-around"
+                    >
+                        <div
+                            class="w-[395px] flex flex-col bg-[#81818b1a] rounded-[30px] lg:w-[100%]"
+                        >
+                            <div class="max-w-[395px] lg:max-w-[100%]">
+                                <img
+                                    class="w-[100%] rounded-tl-[30px] rounded-tr-[30px]"
+                                    src="img/f1 (3).png"
+                                    alt="f"
+                                />
+                            </div>
+                            <div class="flex flex-col px-[26px] pb-[40px]">
+                                <span
+                                    class="text-[#81818be6] text-base font-light leading-6 mt-[36px] mb-[20px]"
+                                    >August 28, 2022</span
+                                >
+
+                                <h3
+                                    class="text-[19px] font-normal leading-[27px]"
+                                >
+                                    How to Use Social Proof in Marketing
+                                </h3>
+
+                                <p
+                                    class="text-[#9c9c9c] text-base font-light leading-6 mt-[30px] mb-[22px]"
+                                >
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit lobortis arcu enim urna
+                                    adipiscing praesent velit viverra sit semper
+                                    lorem.
+                                </p>
+                                <a
+                                    class="text-[#3d96f4] text-sm font-light leading-[22px] hover:opacity-50"
+                                    href="#"
+                                >
+                                    Read now
+                                </a>
+                            </div>
+                        </div>
+                        <div
+                            class="w-[395px] flex flex-col bg-[#81818b1a] rounded-[30px] lg:w-[100%]"
+                        >
+                            <div class="max-w-[395px] lg:max-w-[100%]">
+                                <img
+                                    class="w-[100%] rounded-tl-[30px] rounded-tr-[30px]"
+                                    src="img/f1 (2).png"
+                                    alt="f"
+                                />
+                            </div>
+                            <div class="flex flex-col px-[26px] pb-[40px]">
+                                <span
+                                    class="text-[#81818be6] text-base font-light leading-6 mt-[36px] mb-[20px]"
+                                    >August 28, 2022</span
+                                >
+
+                                <h3
+                                    class="text-[19px] font-normal leading-[27px]"
+                                >
+                                    Make a great first impression with these
+                                    titles
+                                </h3>
+
+                                <p
+                                    class="text-[#9c9c9c] text-base font-light leading-6 mt-[30px] mb-[22px]"
+                                >
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit lobortis arcu enim urna
+                                    adipiscing praesent velit viverra sit semper
+                                    lorem.
+                                </p>
+                                <a
+                                    class="text-[#3d96f4] text-sm font-light leading-[22px] hover:opacity-50"
+                                    href="#"
+                                >
+                                    Read now
+                                </a>
+                            </div>
+                        </div>
+                        <div
+                            class="w-[395px] flex flex-col bg-[#81818b1a] rounded-[30px] lg:w-[100%]"
+                        >
+                            <div class="max-w-[395px] lg:max-w-[100%]">
+                                <img
+                                    class="w-[100%] rounded-tl-[30px] rounded-tr-[30px]"
+                                    src="img/f1 (1).png"
+                                    alt="f"
+                                />
+                            </div>
+                            <div class="flex flex-col px-[26px] pb-[40px]">
+                                <span
+                                    class="text-[#81818be6] text-base font-light leading-6 mt-[36px] mb-[20px]"
+                                    >August 28, 2022</span
+                                >
+
+                                <h3
+                                    class="text-[19px] font-normal leading-[27px]"
+                                >
+                                    How to Grab Your Reader’s Attention
+                                </h3>
+
+                                <p
+                                    class="text-[#9c9c9c] text-base font-light leading-6 mt-[30px] mb-[22px]"
+                                >
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit lobortis arcu enim urna
+                                    adipiscing praesent velit viverra sit semper
+                                    lorem.
+                                </p>
+                                <a
+                                    class="text-[#3d96f4] text-sm font-light leading-[22px] hover:opacity-50"
+                                    href="#"
+                                >
+                                    Read now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="px-3">
+                <div class="mx-auto max-w-[1280px] mt-[190px] lg:mt-[100px] bg-[#81818b1a] rounded-[30px] py-[52px] px-[40px] flex justify-around items-center lg:flex-wrap gap-10">
+                    <div class="flex flex-col w-[350px]">
+                        
+                        <h2 class="text-[32px] font-normal leading-[45px] mb-4">Ready to start scaling your business now?</h2>
+                        
+                        <p class="text-[#9c9c9c] text-base font-light leading-6">
+                            Lorem ipsum dolor sit am consectetur adipiscing
+                            varius enim in eros.
+                        </p>
+                    </div>
+                    <div class="flex gap-8 lg:mt-7 flex-wrap">
+                        <button class="hover:opacity-90 text-[14px] font-medium leading-[22px] tracking-[2px] py-[16px] px-[29px] bg-[#3D96F4] rounded-[50px]"
+                        ">Our services</button>
+                        <button class="hover:opacity-90 text-[14px] font-medium leading-[22px] tracking-[2px] py-[16px] px-[29px] bg-[#81818b33] rounded-[50px]"
+                        >Contact us</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="mt-24 px-3">
+            <div class="mx-auto max-w-[1280px] py-[160px] lg:py-[90px] border-b-[1px] border-[#81818b33] flex gap-16 bgg:flex-wrap bgg:justify-around">
+                <div class="flex flex-col pr-8 sm:w-[100%]">
+                    <a href="#">
+                        <svg
+                            width="148"
+                            height="40"
+                            viewBox="0 0 148 40"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M57.6049 17.3896C57.2583 16.751 56.7565 16.2676 56.0997 15.9392C55.4611 15.5926 54.704 15.4192 53.8283 15.4192C52.3139 15.4192 51.1008 15.921 50.1885 16.9244C49.2762 17.9096 48.8202 19.2324 48.8202 20.8926C48.8202 22.6623 49.2946 24.0489 50.2432 25.0523C51.2102 26.0375 52.5329 26.5301 54.2114 26.5301C55.3608 26.5301 56.3278 26.2382 57.1123 25.6544C57.9151 25.0705 58.4988 24.2313 58.8638 23.1366H52.9252V19.6884H63.1056V24.0398C62.759 25.2074 62.166 26.293 61.3268 27.2964C60.5058 28.2998 59.4567 29.1118 58.1796 29.732C56.9025 30.3523 55.4611 30.6625 53.8556 30.6625C51.9582 30.6625 50.2614 30.252 48.7654 29.431C47.2876 28.5918 46.1291 27.4332 45.2899 25.9554C44.4688 24.4776 44.0583 22.79 44.0583 20.8926C44.0583 18.9951 44.4688 17.3075 45.2899 15.8297C46.1291 14.3337 47.2876 13.1752 48.7654 12.3542C50.2432 11.5149 51.9308 11.0953 53.8283 11.0953C56.1271 11.0953 58.061 11.6518 59.63 12.7647C61.2173 13.8775 62.2664 15.4192 62.7772 17.3896H57.6049ZM70.3775 17.8001C70.9248 16.9609 71.609 16.3041 72.43 15.8297C73.251 15.3371 74.1632 15.0908 75.1666 15.0908V20.0442H73.8804C72.7128 20.0442 71.8371 20.2997 71.2532 20.8105C70.6693 21.3031 70.3775 22.1788 70.3775 23.4377V30.5257H65.6978V15.255H70.3775V17.8001ZM84.3546 30.7446C82.8585 30.7446 81.5085 30.4254 80.3043 29.7868C79.1184 29.1482 78.1788 28.236 77.4856 27.0501C76.8104 25.8642 76.473 24.4776 76.473 22.8903C76.473 21.3213 76.8196 19.9439 77.5129 18.758C78.2061 17.5538 79.1549 16.6325 80.3591 15.9939C81.5632 15.3553 82.9132 15.0361 84.4093 15.0361C85.9054 15.0361 87.2555 15.3553 88.4596 15.9939C89.6638 16.6325 90.6124 17.5538 91.3058 18.758C91.999 19.9439 92.3457 21.3213 92.3457 22.8903C92.3457 24.4594 91.9899 25.846 91.2784 27.0501C90.5851 28.236 89.6272 29.1482 88.4049 29.7868C87.2007 30.4254 85.8506 30.7446 84.3546 30.7446ZM84.3546 26.6943C85.2486 26.6943 86.0057 26.3659 86.626 25.7091C87.2645 25.0523 87.5839 24.1127 87.5839 22.8903C87.5839 21.668 87.2737 20.7284 86.6534 20.0716C86.0513 19.4148 85.3033 19.0864 84.4093 19.0864C83.4971 19.0864 82.74 19.4148 82.1379 20.0716C81.5358 20.7102 81.2348 21.6497 81.2348 22.8903C81.2348 24.1127 81.5267 25.0523 82.1105 25.7091C82.7126 26.3659 83.4606 26.6943 84.3546 26.6943ZM116.749 15.255L112.616 30.5257H107.444L105.036 20.6189L102.546 30.5257H97.4009L93.2411 15.255H97.9208L100.083 26.1744L102.655 15.255H107.608L110.208 26.1196L112.343 15.255H116.749ZM126.196 19.1411H123.679V30.5257H118.999V19.1411H117.302V15.255H118.999V14.8172C118.999 12.938 119.537 11.5149 120.614 10.5479C121.69 9.56275 123.268 9.07014 125.348 9.07014C125.694 9.07014 125.95 9.07927 126.114 9.09751V13.0657C125.221 13.011 124.591 13.1386 124.226 13.4488C123.861 13.759 123.679 14.3154 123.679 15.1182V15.255H126.196V19.1411ZM143.994 15.255L134.416 37.7779H129.38L132.883 30.0057L126.671 15.255H131.898L135.429 24.806L138.931 15.255H143.994Z"
+                                fill="white"
+                            />
+                            <path
+                                d="M23.1565 12.632C23.1565 8.5628 26.4552 5.26406 30.5244 5.26406H37.8924V12.632C37.8924 16.7013 34.5937 20 30.5244 20C26.4552 20 23.1565 16.7013 23.1565 12.632Z"
+                                fill="#FF6D35"
+                            />
+                            <path
+                                d="M30.5243 37.6771C26.4551 37.6771 23.1564 34.3784 23.1564 30.3092V22.9412H30.5243C34.5936 22.9412 37.8923 26.2399 37.8923 30.3092C37.8923 34.3784 34.5936 37.6771 30.5243 37.6771Z"
+                                fill="#5CC97B"
+                            />
+                            <path
+                                d="M20.8348 20.6522C20.8348 12.4754 14.7086 5.84694 7.15147 5.84694V30.0214C7.15147 34.1097 10.2146 37.424 13.9932 37.424C17.7718 37.424 20.8348 34.1097 20.8348 30.0214V20.6522Z"
+                                fill="#3D96F4"
+                            />
+                        </svg>
+                    </a>
+                    <p class="text-base text-[#9c9c9c] py-[33px] max-w-[350px]">Growfy is a template highly suitable for modern marketing agencies, digital studios, startups and businesses. The design is made in the dark style, which makes the site memorable and you can easily adapt it to your brand.</p>
+                    <ul class="flex gap-4">
+                        <li><a href="#"><img src="img/in.png" alt="img"></a></li>
+                        <li><a href="#"><img src="img/tw.png" alt="img"></a></li>
+                        <li><a href="#"><img src="img/fb.png" alt="img"></a></li>
+                        <li><a href="#"><img src="img/yt.png" alt="img"></a></li>
+                        <li><a href="#"><img src="img/inst.png" alt="img"></a></li>
+                    </ul>
+                </div>
+                <div class="pr-12 sm:w-[100%] md:hidden">
+                    <h3 class="text-xl font-medium leading-6 tracking-[1px]">
+                        Pages
+                    </h3>
+
+                    <ul class="text-[#9c9c9c] text-base font-light leading-[26px] flex flex-col gap-6 mt-[31px]">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Packages</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+
+                    
+                </div>
+
+                <div class="hidden accordion md:flex sm:w-[100%]">
+                    <!--  Panel 1  -->
+                    <div>
+                        <input
+                            type="checkbox"
+                            name="panel"
+                            id="panel-1"
+                            class="hidden"
+                        />
+                        <label
+                            for="panel-1"
+                            class="relative block text-xl font-medium leading-6 tracking-[1px] shadow"
+                            >Pages</label
+                        >
+                        <div class="accordion__content overflow-hidden bg-grey-lighter w-[100%]">
+                            <ul class="text-[#9c9c9c] text-base font-light leading-[26px] flex flex-col gap-6 mt-[31px]">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Packages</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:hidden pr-12 sm:w-[100%]">
+                    <h3 class="text-xl font-medium leading-6 tracking-[1px]">
+                        Utility pages
+                    </h3>
+
+                    <ul class="text-[#9c9c9c] text-base font-light leading-[26px] flex flex-col gap-6 mt-[31px]">
+                        <li><a href="#">Instructions</a></li>
+                        <li><a href="#">Style guide</a></li>
+                        <li><a href="#">Licenses</a></li>
+                        <li><a href="#">Changelog</a></li>
+                        <li><a href="#">404 Not found</a></li>
+                        <li><a href="#">Password protected</a></li>
+                    </ul>
+                </div>
+                <div class="hidden accordion md:flex sm:w-[100%]">
+                    <!--  Panel 1  -->
+                    <div>
+                        <input
+                            type="checkbox"
+                            name="panel"
+                            id="panel-2"
+                            class="hidden"
+                        />
+                        <label
+                            for="panel-2"
+                            class="relative block text-xl font-medium leading-6 tracking-[1px] shadow"
+                            >Utility pages</label
+                        >
+                        <div class="accordion__content overflow-hidden bg-grey-lighter w-[100%]">
+                            <ul class="text-[#9c9c9c] text-base font-light leading-[26px] flex flex-col gap-6 mt-[31px]">
+                                <li><a href="#">Instructions</a></li>
+                                <li><a href="#">Style guide</a></li>
+                                <li><a href="#">Licenses</a></li>
+                                <li><a href="#">Changelog</a></li>
+                                <li><a href="#">404 Not found</a></li>
+                                <li><a href="#">Password protected</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <form class="sm:w-[100%]">
+                    <fieldset>
+                        
+                        <legend class="text-[20px] font-medium leading-6 tracking-[1px]">Subscribe to our newsletter</legend>
+                    
+                        <p class="text-[#9c9c9c] py-[30px] text-base font-light leading-6">Lorem ipsum dolor sit am consectetur adipiscing</p>
+                        <div class="flex gap-5 flex-wrap">
+                            <input class="max-w-[210px] rounded-[50px] border-[#81818b4d] border outline-none bg-[#0D0D11] text-base font-normal leading-normal text-[#999] placeholder:text-base placeholder:font-normal placeholder:leading-normal placeholder:text-[#999] px-[33px] py-[14px]" type="text" placeholder="Enter your email">
+                            <button class="max-w-[150px] hover:opacity-90 text-[14px] font-medium leading-[22px] tracking-[2px] py-[16px] px-[29px] bg-[#3D96F4] rounded-[50px]">Subscribe</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="flex items-center justify-center py-[46px] text-[#9C9C9C] text-sm">
+                © 2022
+            </div>
+        </footer>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
