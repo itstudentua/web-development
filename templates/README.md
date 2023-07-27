@@ -4,4 +4,4 @@
 
 ## [Mobile menu](/templates/mobile-menu/)
 
-## [Work with Google Sheats](/templates/work-with-googleSheats/)
+## [Work with Google Sheets](/templates/work-with-googleSheats/)
