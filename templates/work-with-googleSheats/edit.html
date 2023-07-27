@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Изменение данных в Google Sheets</title>
+    </head>
+    <body>
+        <label for="valueInput">Новое значение:</label>
+        <input type="text" id="valueInput" />
+        <label for="rowInput">Номер строки:</label>
+        <input type="text" id="rowInput" />
+        <label for="colInput">Номер столбца:</label>
+        <input type="text" id="colInput" />
+        <button onclick="updateSheet()">Изменить значение</button>
+
+        <script>
+            function updateSheet() {
+                var newValue = document.getElementById("valueInput").value;
+                var row = document.getElementById("rowInput").value;
+                var col = document.getElementById("colInput").value;
+
+                // Создаем XMLHttpRequest объект для отправки запроса на Google Apps Script
+                var xhr = new XMLHttpRequest();
+                var url =
+                    "https://script.google.com/macros/s/AKfycbyF8mS4DY4Z1wESjsYf7N5pfBnyocuMr6c8nvIKSSGe71O1iWozy1oJ53n-6bJy_PunEw/exec";
+                var params =
+                    "value=" +
+                    encodeURIComponent(newValue) +
+                    "&row=" +
+                    encodeURIComponent(row) +
+                    "&col=" +
+                    encodeURIComponent(col);
+
+                xhr.open("POST", url, true);
+                xhr.setRequestHeader(
+                    "Content-type",
+                    "application/x-www-form-urlencoded"
+                );
+
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4 && xhr.status == 200) {
+                        console.log("Значение успешно изменено!");
+                    }
+                };
+
+                xhr.send(params);
+            }
+        </script>
+    </body>
+</html>

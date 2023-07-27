@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Send Google Sheet</title>
+    </head>
+    <body>
+        <h1>Hello World</h1>
+
+        <h2>
+            I work with this
+            <a
+                href="https://docs.google.com/spreadsheets/d/1fT1vde_yz9iGiCHg830dqXXuUO9385tEc4AslthWaJo/edit?pli=1#gid=0"
+                target="_blank"
+                >sheet</a
+            >
+            <button id="btn" onclick="sendDataToGS()">Send data</button>
+        </h2>
+
+        <script>
+            var data = {
+                id: "1",
+                field1: "значение3",
+                field2: "значение2",
+                field3: "значение3",
+            };
+
+            function sendDataToGS() {
+                fetch(
+                    "https://script.google.com/macros/s/AKfycbxWDtQb3Ezvv5nlSbFuxf_gFUJJz1R9PiLABGY68-FOvbYWgBqpi-zMqrGxgCyNgnEpjw/exec",
+                    {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/x-www-form-urlencoded",
+                        },
+                        body: new URLSearchParams(data),
+                    }
+                )
+                    .then((response) => response.json())
+                    .then((data) => {
+                        alert('Success!');
+
+                        console.log(data); // Выводим ответ от сервера
+                    })
+                    .catch((error) => {
+                        console.error("Ошибка:", error);
+                    });
+            }
+        </script>
+
+        <!--Google Scripts
+        ******************
+        ******************        
+        ***************-->
+        <script>
+            // function doGet(e) {
+            //     return handleRequest(e);
+            // }
+
+            // function doPost(e) {
+            //     return handleRequest(e);
+            // }
+
+            // function handleRequest(e) {
+            //     var response = {};
+
+            //     if (
+            //         e.parameter.field1 &&
+            //         e.parameter.field2 &&
+            //         e.parameter.field3
+            //     ) {
+            //         var sheet = SpreadsheetApp.openById(
+            //             "1fT1vde_yz9iGiCHg830dqXXuUO9385tEc4AslthWaJo"
+            //         ).getActiveSheet();
+            //         var rowData = [
+            //             e.parameter.field1,
+            //             e.parameter.field2,
+            //             e.parameter.field3,
+            //         ];
+            //         sheet.appendRow(rowData);
+            //         response.message =
+            //             "Данные успешно добавлены в Google Sheets.";
+            //     } else {
+            //         response.error = "Ошибка: Недостаточно данных.";
+            //     }
+
+            //     return ContentService.createTextOutput(
+            //         JSON.stringify(response)
+            //     ).setMimeType(ContentService.MimeType.JSON);
+            // }
+        </script>
+    </body>
+</html>

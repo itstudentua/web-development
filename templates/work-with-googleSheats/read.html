@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Read Google Sheet</title>
+    </head>
+    <body>
+        <h2><a href="https://docs.google.com/spreadsheets/d/1fT1vde_yz9iGiCHg830dqXXuUO9385tEc4AslthWaJo/edit?pli=1#gid=0" target="_blank">Sheet</a> content</h2>
+        <textarea name="" id="txta" cols="30" rows="10"></textarea>
+        <script>
+            
+            const texta = document.getElementById('txta');
+
+
+            fetch(
+                "https://script.google.com/macros/s/AKfycbzDqYzQsECNcqqR-VmkwhDiqui138MZNfmA4W0921qZ_DD0u2sQO4OeBmuNlKMGzXgB7A/exec"
+            )
+                .then((response) => response.json())
+                .then((data) => {
+                    console.log(data); // Выводим данные в консоль
+                    texta.textContent = (JSON.stringify(data));
+                    console.log(JSON.stringify(data[0]));
+                })
+                .catch((error) => {
+                    console.error("Ошибка:", error);
+                });
+        </script>
+    </body>
+</html>

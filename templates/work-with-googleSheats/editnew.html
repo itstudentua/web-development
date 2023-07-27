@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Изменение строки в Google Sheets</title>
+    </head>
+    <body>
+        <label for="idInput">ID строки:</label>
+        <input type="text" id="idInput" />
+        <label for="valueInput">Новое значение:</label>
+        <input type="text" id="valueInput" />
+        <button onclick="updateRow()">Изменить строку</button>
+
+        <script>
+            function updateRow() {
+                var id = document.getElementById("idInput").value;
+                var newValue = document.getElementById("valueInput").value;
+
+                // Создаем XMLHttpRequest объект для отправки запроса на Google Apps Script
+                var xhr = new XMLHttpRequest();
+                var url =
+                    "https://script.google.com/macros/s/AKfycby8884j57Urud5wxg5bl5lSVPxLiJcZSeojckR534_e__fgXVAUMbocYyvbMQ9Rk83B_w/exec";
+                var params =
+                    "id=" +
+                    encodeURIComponent(id) +
+                    "&value=" +
+                    encodeURIComponent(newValue);
+
+                xhr.open("POST", url, true);
+                xhr.setRequestHeader(
+                    "Content-type",
+                    "application/x-www-form-urlencoded"
+                );
+
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4 && xhr.status == 200) {
+                        console.log("Строка успешно изменена!");
+                    }
+                };
+
+                xhr.send(params);
+            }
+        </script>
+    </body>
+</html>
